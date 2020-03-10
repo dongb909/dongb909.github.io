@@ -1,5 +1,6 @@
 const path = require('path')
 
+
 module.exports = {
   entry: path.resolve(__dirname, 'components/index.jsx'),
   output: {
@@ -20,8 +21,13 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react'],
           }
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
+  
   },
   mode: 'development'
 }

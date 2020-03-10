@@ -4,7 +4,7 @@
   "description": "\"This site give you an introduction to myself\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "react-dev": "webpack -d -w"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "react-dom": "^16.13.0"
   }
 }

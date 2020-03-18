@@ -12,15 +12,15 @@ function App () {
       <Navbar/>
       <div className="mainContainer">
         <Home/>
-        <section className='about'>
+        <div className='section about'>
           <h3>ABOUT ME</h3>
-        </section>
-        <section className='projects'>
+        </div>
+        <div className='section projects'>
           <h3>PROJECTS</h3>
-        </section>
-        <section className='contact'>
+        </div>
+        <div className='section contact'>
           <h3>CONTACT PAGE</h3>
-        </section>
+        </div>
       </div>
     </div>
   )

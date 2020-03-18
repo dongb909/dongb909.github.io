@@ -17,12 +17,16 @@ nav{
   .navlinks {
     display: flex;
     list-style: none;
-    background: rgba(27, 28, 27, 0.8);
-    width: 50%;
+    width: 30%;
     height: 7vh;
     justify-content: space-around;
     margin-left: auto;
     align-items: center;
+
+    li a {
+      color:white;
+      text-decoration:none;
+    }
   }
 }
 
@@ -37,10 +41,10 @@ nav{
 
 }
 
-section {
+.section {
   padding:7em;
   height: 70%;
-  width:100%;
+  width:90%;
   color: white;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -49,12 +53,29 @@ section {
     font-size: 3em;
   }
 }
+img {
+  height:300px;
+  width: 300px;
+  border-radius: 50%;
+
+}
 
 .home{
   color:tint(white);
   background-image: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_portfolio3.jpg);
   background-size: cover;
   background-position: center;
+  // display:flex;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+  color: black;
+  p {
+
+  }
+  h1 {
+
+  }
 }
 
 .about{

@@ -1,7 +1,9 @@
 import React from 'react';
 
-function App () {
+function About () {
   return (
     <div></div>
   )
 }
+
+export default About;

@@ -1,7 +1,8 @@
 import React from 'react';
 
-function App () {
+function Projects () {
   return (
     <div></div>
   )
 }
+export default Projects;

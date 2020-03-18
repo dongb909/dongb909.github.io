@@ -1,7 +1,9 @@
 import React from 'react';
 
-function App () {
+function Contact () {
   return (
     <div></div>
   )
 }
+
+export default Contact;

@@ -1,23 +1,52 @@
 import React from 'react';
 
-const Nav = () => {
+// class Navbar extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       navbarDisplay: "none"
+//       }
+//   }
+//   render() { 
+//     return ( 
+//       <nav className="navbar" >
+//         <div className="burger" >
+//           <div className="line"></div>
+//           <div className="line"></div>
+//           <div className="line"></div>
+//         </div>
+//         <ul className="navlinks">
+//           <li><a href="#home">HOME</a></li>
+//           <li><a href="#about">ABOUT</a></li>
+//           <li><a href="#projects">PROJECTS</a></li>
+//           <li><a href="#contact">CONTACT</a></li>
+//         </ul>
+//       </nav>  
+//      );
+//   }
+// }
+ 
+// export default Navbar;
+
+
+const Navbar = () => {
+  // const toggleNavbar = (e) => e.target.className.toggle("open")
+
   return (  
-    <nav className="navbar">
-      <div className="burger">
-        <div ></div>
-        <div ></div>
-        <div ></div>
+    <nav className="navbar" >
+      <div className="burger" onClick={() => navlinks.classList.toggle("open")} >
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
-      <div>
-        <ul className="navlinks">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
+      <ul className="navlinks">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
     </nav>  
   );
 }
  
-export default Nav;
+export default Navbar;

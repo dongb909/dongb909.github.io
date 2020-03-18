@@ -44,7 +44,7 @@ nav{
 .section {
   padding:7em;
   height: 70%;
-  width:90%;
+  width:85%;
   color: white;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -57,6 +57,9 @@ img {
   height:300px;
   width: 300px;
   border-radius: 50%;
+  // opacity: 0.9;
+  filter: grayscale(5%);
+
 
 }
 
@@ -70,22 +73,30 @@ img {
   // align-items: center;
   text-align: center;
   color: black;
+ 
+
+  .welcome{
+    background-color: rgba(225, 225, 225, 0.6);
+    padding: 50px 20px;
+    // margin: 0 100px;
+  }
   p {
 
   }
   h1 {
 
   }
+
 }
 
 .about{
-  background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_portfolio9.jpg);
+  background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .projects{
-  background:url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1portfolio4.jpg);
+  background:url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-3759098.jpg);
   background-size: cover;
   background-position-y: 100%;
 }

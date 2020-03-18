@@ -88,9 +88,9 @@ nav{
 }
 
 .section {
-  padding:7em;
-  height: 70%;
-  width:85%;
+  // padding:7em;
+  height: 100%;
+  width:100%;
   color: white;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -118,12 +118,14 @@ img {
   // justify-content: center;
   // align-items: center;
   text-align: center;
+  position: relative;
  
   .welcome{
     background-color: rgba(225, 225, 225, 0.6);
-    padding: 10% 10%;
-
-    // margin: 10% 10%;
+    padding: 7% 25%;
+    border: lightgrey solid;
+    position: absolute;
+    margin: 5% 10%;
   }
   p {
 
@@ -138,6 +140,8 @@ img {
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
   background-size: cover;
   background-position: center;
+
+  
 }
 
 .projects{

@@ -12,9 +12,7 @@ function App () {
       <Navbar/>
       <div className="mainContainer">
         <Home/>
-        <div className='section about'>
-          <h3>ABOUT ME</h3>
-        </div>
+        <About/>
         <div className='section projects'>
           <h3>PROJECTS</h3>
         </div>

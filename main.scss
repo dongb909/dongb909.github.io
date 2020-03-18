@@ -28,6 +28,10 @@ nav{
       color:white;
       text-decoration:none;
       padding-right: 15px;
+
+      &:hover{
+        color:black;
+      }
     }
   }
 }
@@ -119,10 +123,11 @@ img {
   // align-items: center;
   text-align: center;
   position: relative;
+  
  
   .welcome{
     background-color: rgba(225, 225, 225, 0.6);
-    padding: 7% 25%;
+    padding: 5% 25%;
     border: lightgrey solid;
     position: absolute;
     margin: 5% 10%;
@@ -140,6 +145,15 @@ img {
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+  
+  .about_content {
+    margin-top: 5%;
+    margin-left:10%;
+    margin-right: 10%;
+    // margin-bottom:5%;
+    position: absolute;
+  }
 
   
 }

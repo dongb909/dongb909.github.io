@@ -8,7 +8,7 @@ function Home() {
         <p>Hi! My name is </p>
         <h1>BacAi (Rachel) Dong</h1>
         <p>I'm a software engineer based in San Francisco Bay Area</p>
-      <button>Arrow Button</button>
+        <button className="arrow">Arrow Button</button>
       </div>
     </div>
   )

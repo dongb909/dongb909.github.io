@@ -11,8 +11,8 @@ function App () {
     <div>
       <Navbar/>
       <div className="mainContainer">
-        <Home/>
         <About/>
+        <Home/>
         <div className='section projects'>
           <h3>PROJECTS</h3>
         </div>

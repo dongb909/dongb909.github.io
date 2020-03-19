@@ -12,13 +12,9 @@ function App () {
       <Navbar/>
       <div className="mainContainer">
         <About/>
+        <Projects/>
         <Home/>
-        <div className='section projects'>
-          <h3>PROJECTS</h3>
-        </div>
-        <div className='section contact'>
-          <h3>CONTACT PAGE</h3>
-        </div>
+        <Contact/>
       </div>
     </div>
   )

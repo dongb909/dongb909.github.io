@@ -146,6 +146,13 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
+  display:grid;
+  grid-template-rows: 5fr 3fr;
+  grid-template-areas:
+    "box1"
+    "box2";
+  // grid-auto-flow: col;
+
   
   .about_content {
     margin-top: 5%;
@@ -153,9 +160,29 @@ img {
     margin-right: 10%;
     // margin-bottom:5%;
     position: absolute;
+    grid-area:box1;
   }
+  .skills_container {
+    margin-left:10%;
+    margin-right:10%;
+    grid-area: box2;
+    position: absolute;
+    display:grid;
+    background-color: rgba(225, 225, 225, 0.6);
+    width:85%;
 
+    grid-template-columns: repeat(4, 100px);
+    grid-column-gap: 18%;
+    grid-row-gap: 10%;
   
+    .react{
+      margin-left:30px;
+
+    }
+    .postgres{
+      margin-left:30px;
+    }
+  }
 }
 
 .projects{

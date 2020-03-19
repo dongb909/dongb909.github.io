@@ -7,6 +7,7 @@ import GoalTracker from './projs/GoalTracker';
 function Projects () {
   return (
     <div className='section projects'>
+      <h1>PROJECTS</h1>
       <div className="projects_main_container">
         <Air6n6 />
         <DataFi/>

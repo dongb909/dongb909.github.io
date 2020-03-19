@@ -5,9 +5,9 @@ function Home() {
     <div className="section home">
       <div className="welcome">
         <img src="https://srpics.s3-us-west-1.amazonaws.com/00.jpg" alt="Profile picture" ></img>
-        <p>Hi! My name is </p>
-        <h1>BacAi (Rachel) Dong</h1>
-        <p>I'm a software engineer based in San Francisco Bay Area</p>
+        <h1>Hi! I'm BacAi (Rachel),</h1>
+        <p>a software engineer based in <strong>San Francisco Bay Area</strong></p>
+        <p>Please take a look around!</p>
         <button className="arrow">Arrow Button</button>
       </div>
     </div>

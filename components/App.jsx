@@ -1,5 +1,5 @@
 import React from 'react';
-import '../main.scss'
+import '../public/main.scss'
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';

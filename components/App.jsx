@@ -11,10 +11,10 @@ function App () {
     <div>
       <Navbar/>
       <div className="mainContainer">
-        <Projects/>
-        <About/>
-        <Home/>
         <Contact/>
+        <Home/>
+        <About/>
+        <Projects/>
       </div>
     </div>
   )

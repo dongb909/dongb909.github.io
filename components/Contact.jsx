@@ -6,9 +6,10 @@ function Contact () {
       <div className="contacts_container">
         <div className="contacts_content contacts_bg">
           <div className="contacts_heading">
-            <h1>THANK YOU FOR VISITING!</h1>
+            <h1>Have a problem? Need to build a website?</h1>
             <br/>
-            <p><strong>Connect with me and let's collaborate to create something great</strong></p>
+            <p><strong>Connect with me and let's solve your problem!</strong></p>
+            <p>Thank you for visiting</p>
           <img></img>
           </div>
         </div>

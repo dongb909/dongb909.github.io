@@ -4,6 +4,7 @@ import Skills from './Skills'
 function About () {
   return (
     <div className='section about'>
+      <a id="aboutlinked"></a>
       <div className='about_content'>
         <h1>Let me take you through a breif journey</h1>
         <br/>

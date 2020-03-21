@@ -40,10 +40,10 @@ const Navbar = () => {
         <div className="line"></div>
       </div>
       <ul className="navlinks">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#homelinked">HOME</a></li>
+        <li><a href="#aboutlinked">ABOUT</a></li>
+        <li><a href="#projectlinked">PROJECTS</a></li>
+        <li><a href="#contactlinked">CONTACT</a></li>
       </ul>
     </nav>  
   );

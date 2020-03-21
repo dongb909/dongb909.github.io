@@ -3,6 +3,7 @@ import React from 'react';
 function Contact () {
   return (
     <div className='section contact'>
+      <a id="contactlinked"></a>
       <div className="contacts_container">
         <div className="contacts_content contacts_bg">
           <div className="contacts_heading">

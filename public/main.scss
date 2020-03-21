@@ -22,16 +22,17 @@ html, body {
     display: flex;
     list-style: none;
     width: 40%;
-    height:100%;
-    letter-spacing: 1px;
+    height: 100%;
+    letter-spacing: .1rem;
     justify-content: space-around;
     margin-left: auto;
     align-items: center;
+    margin-right: 2rem;
 
     li a {
       color:white;
       text-decoration:none;
-      padding-right: 15px;
+      padding-right:2rem;
 
       &:hover{
         color:black;
@@ -134,8 +135,8 @@ html, body {
     width:60%;
     height:80%;
     img {
-      height:300px;
-      width: 300px;
+      // height:20rem;
+      width: 17rem;
       border-radius: 15%;
       // opacity: 0.9;
       filter: grayscale(5%);

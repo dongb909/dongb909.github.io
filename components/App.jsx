@@ -6,18 +6,25 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Navbar from './Navbar';
 
-function App () {
-  return (
-    <div>
-    <Navbar/>
-      <div className="mainContainer">
-        <Home />
-        <About />
-        <Projects/>
-        <Contact />
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+  render() { 
+    return ( 
+      <div>
+        <Navbar/>
+        <div className="mainContainer">
+          <Home />
+          <About />
+          <Projects/>
+          <Contact />
+        </div>
       </div>
-    </div>
-  )
+     );
+  }
 }
-
+ 
 export default App;
+

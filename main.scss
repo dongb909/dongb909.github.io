@@ -44,16 +44,16 @@ html, body {
 @media screen and (max-width: 700px) {
   // USE class name .navbar not the selector nav element or else it won't work
   //works with nav element selector when didn't use z-index and position fixed for 
-  .navbar {
-    position: fixed;
-    .navlinks {
-      position: fixed;
+  // .navbar {
+    // position: fixed;
+    // .navlinks {
+      // position: fixed;
       // background: lightgrey;
       // height: 100vh;
       // width: 100%;
       // flex-direction: column;
       // z-index:1;
-      visibility: hidden;
+      // visibility: hidden;
       // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
       // -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
       // transition: all 1.5s ease-in-out;
@@ -63,20 +63,20 @@ html, body {
       //   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
         
       // }
-    }
-  }
+    // }
+  // }
   
-  .burger {
-    position: absolute;
-    right: 3%;
-    top:50%;
-    cursor:pointer;
-    transform: translate(-5%, -50%);
+  // .burger {
+  //   position: absolute;
+  //   right: 3%;
+  //   top:50%;
+  //   cursor:pointer;
+  //   transform: translate(-5%, -50%);
     // &::active {
     //   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     //   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     // }
-  }
+  // }
 
   .line {
     width:30px;

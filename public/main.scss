@@ -9,17 +9,20 @@ html, body {
   overflow: hidden;
 }
 
-nav{
-  height:7vh;
-  background:lightgrey;
+.navbar{
+  // height:7vh;
+  background:rgb(221, 217, 217);
   position: fixed;
+  z-index: 1;
+  width:100%;
+  height: 6vh;
   
   
   .navlinks {
     display: flex;
     list-style: none;
     width: 40%;
-    height: 7vh;
+    height:100%;
     letter-spacing: 1px;
     justify-content: space-around;
     margin-left: auto;
@@ -37,8 +40,10 @@ nav{
   }
 }
 
-@media screen and (max-width: 750px) {
-  nav {
+@media screen and (max-width: 700px) {
+  // USE class name .navbar not the selector nav element or else it won't work
+  //works with nav element selector when didn't use z-index and position fixed for 
+  .navbar {
     position: relative;
     .navlinks {
       position: fixed;
@@ -46,7 +51,6 @@ nav{
       height: 100vh;
       width: 100%;
       flex-direction: column;
-      border:solid;
       z-index:1;
       // visibility: hidden;
       clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -85,10 +89,12 @@ nav{
 .mainContainer {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   // -ms-scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100%);
   height: 100vh;
+  padding-top:30px;
 
 }
 
@@ -97,7 +103,7 @@ nav{
   height: 100%;
   width:100%;
   color: white;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   scroll-snap-stop: always;
   color: black;
   
@@ -197,7 +203,7 @@ nav{
   text-align:center;
  
   h1{
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom:0;
     margin-bottom:0;
     // border:black solid;
@@ -207,7 +213,7 @@ nav{
     display:grid;
     position:relative;
     grid-template-columns: 1fr 1fr;
-    // grid-row-gap: 2%;
+    // grid-row-gap: 0;
     grid-column-gap: 2%;
     // background-color: lightpink;
     height:85%;
@@ -218,6 +224,7 @@ nav{
     h1{
       font-size: medium;
       text-decoration: underline;
+      padding-top:0;
     }
     .project_container{
       // position: absolute;

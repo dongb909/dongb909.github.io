@@ -44,7 +44,7 @@ html, body {
   // USE class name .navbar not the selector nav element or else it won't work
   //works with nav element selector when didn't use z-index and position fixed for 
   .navbar {
-    position: relative;
+    position: fixed;
     .navlinks {
       position: fixed;
       background: lightgrey;

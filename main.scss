@@ -237,7 +237,7 @@ html, body {
 }
 @media screen and (max-width: 700px) {
   .section.about{
-  grid-template-rows: 5fr 3fr;
+  grid-template-rows: 2fr 2fr;
   }
 }
 .section.projects{
@@ -354,7 +354,7 @@ html, body {
         margin-top:2em;
         img {
           // height:20rem;
-          width: 14em;
+          width: 19em;
           border-radius: 15%;
           // opacity: 0.9;
           filter: grayscale(5%);
@@ -384,12 +384,17 @@ html, body {
   }
 }
 
-// @media screen and (max-width: 700px) {
-//   .contacts_heading{
-
-//     &:img {
-//       // height:20rem;
-//       width: 5em;
-//     }
-//   }
-// }
+@media screen and (max-width: 700px) {
+  .section.contact{
+    .contacts_container {
+      // height:20rem;
+      .contacts_content{
+        .contacts_heading{
+          img{
+            width: 12em;
+          }
+        }
+      }
+    }
+  }
+}

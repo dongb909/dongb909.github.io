@@ -136,44 +136,46 @@ html, body {
   transform: translateX(2%);
   transition: transform 1.5s ease-in-out;
   visibility: visible;
-
-  
 }
   
   .home{
     background-image: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_portfolio3.jpg);
     background-size: cover;
-  background-position: center;
-  text-align: center;
-  position: relative;
-  
+    background-position: center;
+    text-align: center;
+    position: relative;
+    border:black solid;
  
-  .welcome{
-    background-color: rgba(246, 250, 250, 0.4);
-    padding: 10% 25%;
-    // border: lightgrey solid;
-    position: absolute;
-    // margin: 5%;
-    width:100%;
-    height:100%;
-    img {
-      // height:20rem;
-      width: 17rem;
-      border-radius: 15%;
-      // opacity: 0.9;
-      filter: grayscale(5%);
     
     
-    }
-  }
-  
-  p {
+    .welcome{
+      background-color: rgba(246, 250, 250, 0.4);
+      // padding: 10% 25%;
+      border: red solid;
+      position: relative;
+      // margin: 5%;
+      width:100%;
+      height:100%;
+      // justify-items: center;
+      // text-align:center;
+      align-items: center;
+      justify-content: center;
+      vertical-align: center;
+      
+      .home_content{
+        // justify-items: center;
+        // align-items: center;
+        // justify-content: center;
+        height:15em;
+        width:21em;
 
+        margin-top:18em;
+        // margin-left:20%; 
+        // margin-right:20%;
+        position:absolute;
+        background-color: rgba(246, 250, 250, 0.7);
+      }
   }
-  h1 {
-
-  }
-
 }
 
 .section.about{
@@ -233,7 +235,11 @@ html, body {
   background:url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-3759098.jpg);
   background-size: cover;
   background-position: center;
+  // position:relative;
   text-align:center;
+  justify-items: center;
+  // border:green solid;
+  width:100%;
   
  
   h1{
@@ -250,29 +256,31 @@ html, body {
     grid-column-gap: 2%;
     // background-color: lightpink;
     height:85%;
-    width:95%;
-    margin-left: 3%; 
+    width:100%; 
+    padding-left:1%;
+    padding-right:3%;
+    // border:red solid;
     
     h1{
       font-size: medium;
       text-decoration: underline;
       padding-top:0;
     }
-    .project_container{
-      // position: absolute;
-      margin:0;
-      .project_content{
+    // .project_container{
+    //   // position: absolute;
+    //   margin:0;
+    //   .project_content{
         .project_media{
           iframe{
-            width:18em;
+            width:15em;
             height:12em;
           }
           img {
-            width:18em;
+            width:15em;
             height:12em;
           }
-        }
-      }
+      //   }
+      // }
 
       .project_description{
         margin: 0 2%;
@@ -280,16 +288,23 @@ html, body {
         // border:grey solid
       }
     }
- 
   }
-  // background-position-y: 100%;
 }
+// @media screen and (max-width: 700px) {
+//   .section.projects{
+//     iframe{
+//       width:10em;
+//       height:12em;
+//     }
+//   }
+// }
 
 .contact{
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-1166643.jpg);
   background-size: cover;
   background-position: center;
   align-items: center;
+
   .contacts_container{
     position: relative;
     display: grid;
@@ -297,23 +312,34 @@ html, body {
     align-items:center;
     // border:black 1px solid;
     width:100%;
-    height:90%;
+    height:100%;
+    border:green solid;
+
     
     .contacts_content{
-      // border:red solid;
-
-      
-      
+      border:red solid;
+      width:100%;
+      height:80%;
     }
     .contacts_bg{
+      justify-items:center;
       text-align:center;
       margin-left:20%;
-      height:20%;
+      height:40em;
       width:70%;
       
-      
       .contacts_heading{
-   
+        border:blue solid;
+        margin-top:5em;
+        img {
+          // height:20rem;
+          width: 14em;
+          border-radius: 15%;
+          // opacity: 0.9;
+          filter: grayscale(5%);
+        
+        
+        }
       }
       
     }

@@ -66,7 +66,7 @@ html, body {
   .burger {
     position: absolute;
     display:block;
-    right: 5%;
+    right: 8%;
     top:50%;
     // border: red solid;
     cursor: pointer;
@@ -144,15 +144,15 @@ html, body {
     background-position: center;
     text-align: center;
     position: relative;
-    border:black solid;
- 
+    border:white solid 1px;
+    
     
     
     .welcome{
       background-color: rgba(246, 250, 250, 0.4);
       // padding: 10% 25%;
-      border: red solid;
-      position: relative;
+      // border: red solid;
+      position: absolute;
       // margin: 5%;
       width:100%;
       height:100%;
@@ -167,12 +167,12 @@ html, body {
         // align-items: center;
         // justify-content: center;
         height:15em;
-        width:21em;
+        // width:21em;
 
         margin-top:18em;
-        // margin-left:20%; 
-        // margin-right:20%;
-        position:absolute;
+        margin-left:8em; 
+        margin-right:8em;
+        position:relative;
         background-color: rgba(246, 250, 250, 0.7);
       }
   }
@@ -313,11 +313,11 @@ html, body {
     // border:black 1px solid;
     width:100%;
     height:100%;
-    border:green solid;
+    // border:green solid;
 
     
     .contacts_content{
-      border:red solid;
+      // border:red solid;
       width:100%;
       height:80%;
     }
@@ -329,8 +329,8 @@ html, body {
       width:70%;
       
       .contacts_heading{
-        border:blue solid;
-        margin-top:5em;
+        // border:blue solid;
+        margin-top:7em;
         img {
           // height:20rem;
           width: 14em;
@@ -346,13 +346,16 @@ html, body {
     .contacts_icons{
       position:relative;
       display:grid;
+
       grid-template-rows: repeat(5,1fr);
       padding-left:20%;
       .icon{
         margin-top:5%;
         a {
           text-decoration: none;
+          margin:0;
           color: black;
+       
 
         }
       }

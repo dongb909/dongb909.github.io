@@ -10,11 +10,10 @@ function Air6n6 () {
           </iframe>
         </div>
         <div className="project_description">
-          <h1>RECOMMENDATIONS</h1>
-          <p>A single page application that involved the reimplementation of a user interface 
-            component and functionality from a well-established website. A carousel was created 
-            showing 3 listings at a time with the option to slide left or right and an option to 
-            favorite a particular listing through a sign-in popup and optimized for load speed.
+          <a src="https://github.com/Air6n6/Recommendation"><h1>Air6n6-Listings</h1></a>
+          <p>A single page application reimplementation of a UI from a well-established website. 
+            A carousel was created showing 3 listings at a time with the option to slide left or right 
+            and an option to favorite a particular listing through a sign-in popup. Optimized for load speed.
           </p>
         </div>
       </div>  

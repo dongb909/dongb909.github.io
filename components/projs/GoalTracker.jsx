@@ -10,11 +10,9 @@ function GoalTracker () {
           </iframe>
         </div>
         <div className="project_description">
-          <h1>GOALS</h1>
-          <p>TEMP A single page application that involved the reimplementation of a user interface 
+          <a src="https://github.com/dongb909/mvp"><h1>GOALS TRACKER</h1></a>
+          <p>TEMP .....A single page application that involved the reimplementation of a user interface 
             component and functionality from a well-established website. A carousel was created 
-            showing 3 listings at a time with the option to slide left or right and an option to 
-            favorite a particular listing through a sign-in popup and optimized for load speed.
           </p>
         </div>
       </div>  

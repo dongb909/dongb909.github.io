@@ -12,11 +12,10 @@ function DataFi () {
             height="160"></img>
         </div>
         <div className="project_description">
-          <h1>DATAFI</h1>
+          <a src="http://github.com/Data-fi/Gallery"><h1>DATAFI</h1></a>
           <p>I redesigned the backend for a gallery microservice to be able to take 
             on production level load by identifying bottlenecks for speed optimization
-             and scaling. The goal was for the application to support at least 1000 
-             requests per second, with a latency of at most 2000 ms after deployment.
+             and scaling. Goal: throughput {">"} 1000rps, latency {"<"} 2000ms.
           </p>
         </div>
       </div>  

@@ -70,7 +70,7 @@ html, body {
     display:block;
     right: 5%;
     top:50%;
-    border: black solid;
+    border: red solid;
     cursor: pointer;
     transform: translate(-5%, -50%);
     &::active {
@@ -165,47 +165,66 @@ html, body {
 
 }
 
-.about{
+.section.about{
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
+  border:purple solid;
+  height:100%;
+  width:100%;
   display:grid;
   grid-template-rows: 5fr 3fr;
   grid-template-areas:
     "box1"
     "box2";
+  justify-items: center;
+  grid-row-gap:2em;
   // grid-auto-flow: col;
 
   
   .about_content {
-    margin-top: 5%;
-    margin-left:10%;
-    margin-right: 10%;
+    margin-top: 3rem;
+    // margin-left:10%;
+    // margin-right: 10%;
     // margin-bottom:5%;
     position: absolute;
-    grid-area:box1;
+    grid-area: box1;
+    border:green solid;
+    height:90%;
+    width:90%;
   }
   .skills_container {
-    margin-left:10%;
-    margin-right:10%;
     grid-area: box2;
     position: absolute;
-    display:grid;
     background-color: rgba(225, 225, 225, 0.6);
-    width:85%;
-
-    grid-template-columns: repeat(4, 100px);
-    grid-column-gap: 18%;
-    grid-row-gap: 10%;
-  
-    .react{
-      margin-left:30px;
+    width:90vw;
+    height:33vh;
+    justify-items: center;
+    border:blue solid;
+    // align-items: center;
+    // justify-content: center;
+    .skills_grid {
+      display:grid;
+      position: relative;
+      height:100%;
+      width:100%;
+      border:red solid;
+      grid-auto-rows: 110px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 2em;
+      // justify-items: center;
+      grid-row-gap: 5%;
 
     }
-    .postgres{
-      margin-left:30px;
+    .skill{
+      // position: absolute;
+      border: black solid;
+      text-align: center;
+      // height:30%;
+      // width:30%
     }
+
   }
 }
 

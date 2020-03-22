@@ -12,8 +12,8 @@ import Navbar from './Navbar';
       <div>
         <Navbar />
         <div className="mainContainer">
-          <Home/>
           <About/>
+          <Home/>
           <Projects/>
           <Contact/>
         </div>

@@ -237,7 +237,7 @@ html, body {
 }
 @media screen and (max-width: 700px) {
   .section.about{
-  grid-template-rows: 4fr 2fr;
+  grid-template-rows: 5fr 3fr;
   }
 }
 .section.projects{
@@ -322,14 +322,14 @@ html, body {
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-1166643.jpg);
   background-size: cover;
   background-position: center;
-  align-items: center;
+  // align-items: center;
 
   .contacts_container{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items:center;
-    // border:black 1px solid;
+    // align-items:center;
+    // border:black solid;
     width:100%;
     height:100%;
     // border:green solid;
@@ -337,6 +337,7 @@ html, body {
     
     .contacts_content{
       // border:red solid;
+      margin-top:5em;
       width:100%;
       height:80%;
     }
@@ -346,10 +347,11 @@ html, body {
       margin-left:20%;
       height:40em;
       width:70%;
+      // border:purple solid;
       
       .contacts_heading{
         // border:blue solid;
-        margin-top:7em;
+        margin-top:2em;
         img {
           // height:20rem;
           width: 14em;
@@ -365,11 +367,13 @@ html, body {
     .contacts_icons{
       position:relative;
       display:grid;
-
+      // border:yellow solid;
       grid-template-rows: repeat(5,1fr);
-      padding-left:20%;
+      padding-left: 14%;
+      height:70%;
       .icon{
-        margin-top:5%;
+        margin-top:0;
+        // border:green solid;
         a {
           text-decoration: none;
           margin:0;

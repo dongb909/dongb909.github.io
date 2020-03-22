@@ -12,10 +12,10 @@ import Navbar from './Navbar';
       <div>
         <Navbar />
         <div className="mainContainer">
-          <Projects/>
-          <Contact/>
           <Home/>
           <About/>
+          <Projects/>
+          <Contact/>
         </div>
       </div>
      );

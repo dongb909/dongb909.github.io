@@ -326,7 +326,7 @@ html, body {
       margin-left:3%;
       padding:0;
       width:95%;
-      border: red solid;
+      // border: red solid;
       justify-items: center;
       h1{
         font-size: small;
@@ -335,7 +335,7 @@ html, body {
         font-size:small;
       }
       .project_container{
-        border:blue solid;
+        // border:blue solid;
         margin-left:0;
         height:100%;
         width:100%;
@@ -496,16 +496,16 @@ html, body {
 @media screen and (max-width: 420px) {
   .section.contact{
     .contacts_container {
-      border:black solid;
+      // border:black solid;
       // height:20rem;
       .contacts_content{
         margin-top:70%;
-        border:red solid;
+        // border:red solid;
         margin-left:0;
         width:100%;
         height:60%;
         .contacts_heading{
-          border:green solid;
+          // border:green solid;
           margin-top:30%;
           width:100%;
           img{
@@ -519,16 +519,16 @@ html, body {
 @media screen and (max-width: 380px) {
   .section.contact{
     .contacts_container {
-      border:black solid;
+      // border:black solid;
       // height:20rem;
       .contacts_content{
         margin-top:75%;
-        border:red solid;
+        // border:red solid;
         margin-left:0;
         width:100%;
         height:60%;
         .contacts_heading{
-          border:green solid;
+          // border:green solid;
           margin-top:30%;
           width:100%;
           img{
@@ -537,10 +537,10 @@ html, body {
         }
       }
       .contacts_icons{
-        margin-top:70%;
-        border:purple solid;
+        // margin-top:70%;
+        // border:purple solid;
         .icon{
-          border:blue solid;
+          // border:blue solid;
           
         }
       }

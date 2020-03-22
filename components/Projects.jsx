@@ -9,7 +9,7 @@ function Projects () {
     <div className='section projects'>
       <a id="projectslinked"></a>
       <h1>PROJECTS</h1>
-      <p><strong>.....................</strong></p>
+      {/* <p><strong>.....................</strong></p> */}
       <div className="projects_main_container">
         <Air6n6 />
         <DataFi/>

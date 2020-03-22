@@ -137,7 +137,7 @@ html, body {
   // must use both for higher selectivity
 .navlinks.open {
   transform: translateX(2%);
-  transition: transform 1.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
   visibility: visible;
 }
   
@@ -237,27 +237,22 @@ html, body {
 }
 @media screen and (max-width: 700px) {
   .section.about{
-  grid-template-rows: 4fr 2fr;
+  grid-template-rows: 7fr 4fr;
   }
 }
 .section.projects{
   background:url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-3759098.jpg);
   background-size: cover;
   background-position: center;
-  // position:relative;
   text-align:center;
-
-
   // border:green solid;
   width:100%;
   
- 
   h1{
     padding-top: 1.5em;
     padding-bottom:0;
     margin-bottom:0;
     // border:black solid;
-
   }
   .projects_main_container{
     display:grid;
@@ -265,41 +260,23 @@ html, body {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 0.5em;
     margin-left:2%;
-    // margin-right:0;
-    
-    // background-color: lightpink;
+    margin-right:2%;
     height:70%;
-    width:95%; 
-    // padding-left:1%;
-    // padding-right:3%;
-    // border:red solid;
-    
-    .project_container{
-      // border:blue solid;
-      // height:90%;
-      // width:100%;
-      // position:relative;
-    }
+
     h1{
       font-size: medium;
       text-decoration: underline;
       padding-top:0;
     }
-    // .project_container{
-    //   // position: absolute;
-    //   margin:0;
-    //   .project_content{
-        .project_media{
-          iframe{
-            width:13em;
-            height:12em;
-          }
-          img {
-            width:13em;
-            height:12em;
-          }
-      //   }
-      // }
+    .project_media{
+      iframe{
+        width:19em;
+        height:12em;
+      }
+      img {
+        width:19em;
+        height:12em;
+      }
 
       .project_description{
         margin: 0 2%;
@@ -309,14 +286,52 @@ html, body {
     }
   }
 }
-// @media screen and (max-width: 700px) {
-//   .section.projects{
-//     iframe{
-//       width:10em;
-//       height:12em;
-//     }
-//   }
-// }
+@media screen and (max-width: 550px) {
+  .section.projects{
+    h1{
+      padding-top:2em;
+      font-size:x-large;
+    }
+    .projects_main_container{
+      grid-template-columns: 30em;
+      grid-template-rows: 1fr;
+      grid-row-gap:1%;
+      align-items: center;
+      margin:0;
+      padding:0;
+      // height: 90%;
+      // border: red solid;
+      justify-content: center;
+      h1{
+        font-size: small;
+      }
+      p{
+        font-size:small;
+      }
+      .project_container{
+        // border:blue solid;
+        height:100%;
+        width:100%;
+        .project_content{
+          // border:green solid;
+          .project_media{
+            iframe{
+              width:14em;
+              height:8em;
+            }
+            img {
+              width:14em;
+              height:8em;
+            }
+          }
+          .project_description{
+            // border:purple solid;
+          }
+        }
+      }
+    }
+  }
+}
 
 .contact{
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-1166643.jpg);
@@ -391,7 +406,7 @@ html, body {
       .contacts_content{
         .contacts_heading{
           img{
-            width: 12em;
+            width: 10em;
           }
         }
       }

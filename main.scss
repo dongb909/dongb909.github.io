@@ -288,6 +288,7 @@ html, body {
 }
 @media screen and (max-width: 550px) {
   .section.projects{
+    // border:red solid;
     h1{
       padding-top:2em;
       font-size:x-large;
@@ -297,11 +298,10 @@ html, body {
       grid-template-rows: 1fr;
       grid-row-gap:1%;
       align-items: center;
-      margin:0;
+      // margin-left:2%;
       padding:0;
-      // height: 90%;
+      width:90%;
       // border: red solid;
-      justify-content: center;
       h1{
         font-size: small;
       }
@@ -311,7 +311,7 @@ html, body {
       .project_container{
         // border:blue solid;
         height:100%;
-        width:100%;
+        width:92%;
         .project_content{
           // border:green solid;
           .project_media{

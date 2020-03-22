@@ -6,25 +6,34 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Navbar from './Navbar';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
-  render() { 
+
+ function App () {
     return ( 
       <div>
-        <Navbar/>
+        <Navbar />
         <div className="mainContainer">
-          <Home />
-          <About />
+          <Home/>
+          <About/>
           <Projects/>
-          <Contact />
+          <Contact/>
         </div>
       </div>
      );
-  }
 }
  
 export default App;
 
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {visibile: false}
+//     this.navbarHandler = this.navbarHandler.bind(this);
+//   }
+
+//   navbarHandler(event){
+//     event.preventDefault();
+//     console.log(e.target.className);
+//     this.setState(state => ({visible: !state.visible}));
+//     // e.target.className.toggle("open");
+
+//   }

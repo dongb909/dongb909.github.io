@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Navbar = () => {
-
+ 
   return (  
     <nav className="navbar" >
-      <div className="burger" onClick={() => navlinks.classList.toggle("open")} >
+      <div className="burger">
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

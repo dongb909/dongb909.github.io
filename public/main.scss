@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -17,17 +18,16 @@ html, body {
   width:100%;
   height: 6vh;
   
-  
   .navlinks {
+    align-items: center;
+    justify-content: space-around;
     display: flex;
     list-style: none;
     width: 40%;
     height: 100%;
     letter-spacing: .1rem;
-    justify-content: space-around;
     margin-left: auto;
-    align-items: center;
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 
     li a {
       color:white;
@@ -43,81 +43,92 @@ html, body {
 
 @media screen and (max-width: 700px) {
   // USE class name .navbar not the selector nav element or else it won't work
-  //works with nav element selector when didn't use z-index and position fixed for 
-  // .navbar {
-    // position: fixed;
-    // .navlinks {
-      // position: fixed;
-      // background: lightgrey;
-      // height: 100vh;
-      // width: 100%;
-      // flex-direction: column;
-      // z-index:1;
+  // works with nav element selector when didn't use z-index and position fixed for 
+  body{
+    overflow-x:hidden;
+  }
+  .navbar {
+    position: fixed;
+    .navlinks {
+      position: absolute;
+      background: lightgrey;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      z-index:1;
       // visibility: hidden;
-      // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-      // -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-      // transition: all 1.5s ease-in-out;
+      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      transition: transform 0.5s ease-in-out;
+      transform:translateX(-100%);
 
-      // .open {
-      //   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-      //   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-        
-      // }
-    // }
-  // }
-  
-  // .burger {
-  //   position: absolute;
-  //   right: 3%;
-  //   top:50%;
-  //   cursor:pointer;
-  //   transform: translate(-5%, -50%);
-    // &::active {
-    //   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    //   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    // }
-  // }
-
-  .line {
-    width:30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
+    }
   }
   
-}
-
-.mainContainer {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  // -ms-scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100%);
-  height: 100vh;
-  padding-top:30px;
-  position: absolute;
-
-}
-
-.section {
-  // padding:7em;
-  height: 100%;
-  width:100%;
-  color: white;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  color: black;
-  
-  h3{
-    font-size: 3em;
+  .burger {
+    position: absolute;
+    display:block;
+    right: 5%;
+    top:50%;
+    border: black solid;
+    cursor: pointer;
+    transform: translate(-5%, -50%);
+    &::active {
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      }
+      &:hover{
+        cursor:pointer;
+      }
+    }
+    
+    .line {
+      width:30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+    
   }
+  
+  .mainContainer {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    // -ms-scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100%);
+    height: 100vh;
+    // padding-top:10px;
+    position: absolute;
+    
+  }
+  
+  .section {
+    
+    height: 100%;
+    width:100%;
+    color: white;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    color: black;
+    
+    h3{
+      font-size: 3em;
+    }
+  }
+  
+.open {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  // visibility: visible;
+  // z-index:1;
+  
 }
-
-
-.home{
-  background-image: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_portfolio3.jpg);
-  background-size: cover;
+  
+  .home{
+    background-image: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_portfolio3.jpg);
+    background-size: cover;
   background-position: center;
   // display:flex;
   // justify-content: center;
@@ -132,8 +143,8 @@ html, body {
     // border: lightgrey solid;
     position: absolute;
     // margin: 5%;
-    width:60%;
-    height:80%;
+    width:100%;
+    height:100%;
     img {
       // height:20rem;
       width: 17rem;

@@ -23,17 +23,3 @@ import Navbar from './Navbar';
  
 export default App;
 
-// class App extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {visibile: false}
-//     this.navbarHandler = this.navbarHandler.bind(this);
-//   }
-
-//   navbarHandler(event){
-//     event.preventDefault();
-//     console.log(e.target.className);
-//     this.setState(state => ({visible: !state.visible}));
-//     // e.target.className.toggle("open");
-
-//   }

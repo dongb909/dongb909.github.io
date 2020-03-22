@@ -7,6 +7,7 @@ function Contact () {
       <div className="contacts_container">
         <div className="contacts_content contacts_bg">
           <div className="contacts_heading">
+            <img src="https://srpics.s3-us-west-1.amazonaws.com/00.jpg" alt="Profile picture" ></img>
             <h1>Have a problem? Need to build a website?</h1>
             <br/>
             <p><strong>Connect with me and let's solve your problem!</strong></p>

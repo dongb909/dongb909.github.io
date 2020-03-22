@@ -6,8 +6,6 @@ function GoalTracker () {
       <div className="project_content">
         <div className="project_media">
           <iframe 
-            width="250" 
-            height="160" 
             src="https://www.youtube.com/embed/JX9K_1OhfHE?autoplay=1">
           </iframe>
         </div>

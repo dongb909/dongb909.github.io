@@ -5,7 +5,7 @@ function GroceriVibes () {
     <div className='project_container'>
       <div className="project_content">
         <div className="project_media">
-          <iframe width="250" height="160" src="https://www.youtube.com/embed/JX9K_1OhfHE?autoplay=1"></iframe>
+          <iframe src="https://www.youtube.com/embed/JX9K_1OhfHE?autoplay=1"></iframe>
         </div>
         <div className="project_description">
           <h1>GROCERIVIBES</h1>

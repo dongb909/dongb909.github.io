@@ -4,10 +4,8 @@ function Air6n6 () {
   return (
     <div className='project_container'>
       <div className="project_content">
-        <div className="project_media">
+        <div className="project_media medi">
           <iframe 
-            width="250" 
-            height="160" 
             src="https://www.youtube.com/embed/VhR5Ccf0Bms?autoplay=1">
           </iframe>
         </div>

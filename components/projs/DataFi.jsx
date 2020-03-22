@@ -8,7 +8,7 @@ function DataFi () {
           <img 
             src="https://srpics.s3-us-west-1.amazonaws.com/FINISHED+SDC+LOADER+IO+.jpg" 
             alt="DataFi performance metrics" 
-            width="250" 
+            width="230" 
             height="160"></img>
         </div>
         <div className="project_description">

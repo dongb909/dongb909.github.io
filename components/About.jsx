@@ -25,11 +25,3 @@ function About () {
 }
 
 export default About;
-
-/*My research was my first exposure to programming and I loved it so much, I switched careers.
-
-My concentration is in front end development with technologies that I love: React and Redux.
-
-My occupation is also my hobby. I spend my free time coding up personal projects. I also frequent Stack
- Overflow and helping fellow programmers with their JavaScript and React code. Check out my profile here. 
- If you like my answers, feel free to upvote them. I love internet points. */

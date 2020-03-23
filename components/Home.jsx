@@ -9,7 +9,7 @@ function Home () {
           <br/>
           <br/>
           <h1>BacAi aka Rachel </h1>
-          <p>Software Engineer | Programmer | Doctor of Pharmacy | Advid reader | Life Learner </p>
+          <p>Software Engineer | Programmer | Doctor of Pharmacy | Avid reader | Life Learner </p>
           <br/>
           <br/>
           <a href="#aboutbuttonlinked"><button>TAKE A LOOK AROUND!</button></a>

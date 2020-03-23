@@ -11,9 +11,10 @@ function Air6n6 () {
         </div>
         <div className="project_description">
           <a href="https://github.com/Air6n6/Recommendation"><h1>RENTAL LISTINGS</h1></a>
-          <p>Rental listing recommendations carousel UI with option to favorite a particular listing through a sign-in popup. Optimized for load speed. 
-            Tech stack: MySQL | Express | React | Node.js
+          <p>Rental listing recommendations carousel UI with option to favorite a particular listing through 
+            a sign-in popup. Optimized for load speed. 
           </p>
+          <p>Tech stack: MySQL | Express | React | Node.js</p>
         </div>
       </div>  
     </div>

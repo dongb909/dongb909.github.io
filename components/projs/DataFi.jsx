@@ -17,8 +17,9 @@ function DataFi () {
           <a href="http://github.com/Data-fi/Gallery"><h1>DATAFI</h1></a>
           <p>Redesigned the backend for a gallery microservice to be able to take 
             on production level load by identifying bottlenecks for optimization
-             and scaling. Tech stack: AWS | NGINX | New Relic | Loader.io | Node.js
+             and scaling.
           </p>
+          <p>Tech stack: AWS | NGINX | New Relic | Loader.io | Node.js</p>
         </div>
       </div>  
     </div>

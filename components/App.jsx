@@ -13,6 +13,7 @@ import Navbar from './Navbar';
         <Navbar />
         <div className="mainContainer">
           <Home/>
+          <a id="aboutbuttonlinked"></a>
           <About/>
           <Projects/>
           <Contact/>

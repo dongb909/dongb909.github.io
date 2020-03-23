@@ -11,7 +11,9 @@ function Contact () {
             <h1>Need to build a website?</h1>
             <br/>
             <p><strong>Connect with me and let's solve your problem!</strong></p>
-            <p>Thank you for visiting</p>
+            <br/>
+            <br/>
+            <p>And! Thank you for visiting :)</p>
           <img></img>
           </div>
         </div>
@@ -41,7 +43,7 @@ function Contact () {
             <a href="https://www.github.com/dongb909">Github</a>
           </div>
           <div className="icon">
-            <a href="#https://www.linkedin.com/in/dongb909">
+            <a href="https://www.linkedin.com/in/dongb909">
               <svg fill="#000000" 
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 46 46" width="70" height="50">

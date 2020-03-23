@@ -2,7 +2,7 @@ import React from 'react';
 import Air6n6 from './projs/Air6n6';
 import DataFi from './projs/DataFi';
 import GroceriVibes from './projs/GroceriVibes';
-import GoalTracker from './projs/GoalTracker';
+import Portfolio from './projs/Portfolio';
 
 function Projects () {
   return (
@@ -13,8 +13,8 @@ function Projects () {
       <div className="projects_main_container">
         <Air6n6 />
         <DataFi/>
+        <Portfolio/>
         <GroceriVibes/>
-        <GoalTracker/>
       </div>
     </div>
   )

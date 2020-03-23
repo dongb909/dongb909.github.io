@@ -6,9 +6,13 @@ function Home () {
       <a id="homelinked"></a>
       <div className="welcome">
         <div className="home_content">
-          <h1>Hi! I'm BacAi (Rachel),</h1>
-          <p>a software engineer based in <strong>San Francisco Bay Area</strong></p>
-          <button className="arrow">TAKE A LOOK AROUND!</button>
+          <br/>
+          <br/>
+          <h1>BacAi aka Rachel </h1>
+          <p>Software Engineer | Programmer | Doctor of Pharmacy | Advid reader | Life Learner </p>
+          <br/>
+          <br/>
+          <a href="#aboutbuttonlinked"><button>TAKE A LOOK AROUND!</button></a>
         </div>          
       </div>
     </div>

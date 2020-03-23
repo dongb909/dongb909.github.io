@@ -11,9 +11,9 @@ function Projects () {
       <h1>PROJECTS</h1>
       {/* <p><strong>.....................</strong></p> */}
       <div className="projects_main_container">
-        <Air6n6 />
-        <DataFi/>
         <Portfolio/>
+        <Air6n6/>
+        <DataFi/>
         <GroceriVibes/>
       </div>
     </div>

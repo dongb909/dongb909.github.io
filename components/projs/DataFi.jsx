@@ -5,11 +5,13 @@ function DataFi () {
     <div className='project_container'>
       <div className="project_content">
         <div className="project_media">
-          <img 
-            src="https://srpics.s3-us-west-1.amazonaws.com/FINISHED+SDC+LOADER+IO+.jpg" 
-            alt="DataFi performance metrics" 
-            width="230" 
-            height="160"></img>
+          <a href="https://srpics.s3-us-west-1.amazonaws.com/FINISHED+SDC+LOADER+IO+.jpg"
+            target="_blank" 
+            rel="noopener noreferrer">
+              <img src="https://srpics.s3-us-west-1.amazonaws.com/FINISHED+SDC+LOADER+IO+.jpg" 
+                alt="DataFi performance metrics">
+              </img>
+          </a>
         </div>
         <div className="project_description">
           <a href="http://github.com/Data-fi/Gallery"><h1>DATAFI</h1></a>

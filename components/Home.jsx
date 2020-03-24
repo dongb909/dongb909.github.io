@@ -8,8 +8,8 @@ function Home () {
         <div className="home_content">
           <br/>
           <br/>
-          <h1>BacAi aka Rachel </h1>
-          <p>Software Engineer | Programmer | Pharmacist | </p>
+          <h1>Hi! My name is Rachel Dong</h1>
+          <p>Software Engineer | Pharmacist | </p>
           <p>Avid Reader | Life Learner </p>
           <br/>
           <br/>

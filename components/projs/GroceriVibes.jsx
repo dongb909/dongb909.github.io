@@ -10,8 +10,8 @@ function GroceriVibes () {
         <div className="project_description">
           <a href="https://github.com/dongb909/GroceriVibes" ><h1>GROCERIVIBES</h1></a>
           <p> A single page ecommerce application where shoppers can buy groceries.
-          Tech stack: Postgres | Express | React | Node.js
           </p>
+          <p>Tech stack: Postgres | Express | React | Node.js</p>
         </div>
       </div>  
     </div>

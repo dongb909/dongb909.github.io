@@ -10,7 +10,7 @@ function Home () {
           <br/>
           <h1>Hi! My name is Rachel Dong</h1>
           <p>Software Engineer | Pharmacist | </p>
-          <p>Avid Reader | Life Learner </p>
+          <p>Avid Reader | Lifelong Learner </p>
           <br/>
           <br/>
           <a href="#aboutbuttonlinked"><button>TAKE A LOOK AROUND!</button></a>

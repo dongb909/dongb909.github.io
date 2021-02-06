@@ -87,22 +87,7 @@ html, body {
     background: white;
     margin: 5px;
   }
-  // .projects_main_container{
-  //   .project_container{
-  //     .project_content{
-  //       .project_media{  
-  //         iframe{
-  //           width: 20%;
-            
-      
-  //         }
-  //         img {
-      
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+
 }
 
 
@@ -124,7 +109,6 @@ html, body {
     
     scroll-snap-align:start;
     height: 100%;
-    // width:95%;
     color: white;
     // scroll-snap-align: center;
     // scroll-snap-stop: always;
@@ -134,7 +118,6 @@ html, body {
       font-size: 3em;
     }
   }
-  // must use both for higher selectivity
 .navlinks.open {
   transform: translateX(2%);
   transition: transform 0.8s ease-in-out;
@@ -149,8 +132,6 @@ html, body {
     position: relative;
     border:white solid 1px;
     
-    
-    
     .welcome{
       background-color: rgba(246, 250, 250, 0.1);
       // padding: 10% 25%;
@@ -160,7 +141,6 @@ html, body {
       width:100%;
       height:100%;
 
-      
       .home_content{
         height:40%;
         margin-top:13em;
@@ -171,8 +151,13 @@ html, body {
       }
       h1 {
         font-size:3em;
-        margin-bottom:1%
+        margin-bottom:1%;
       }
+      #homeTitle{
+        color: coral;
+        font-family: "Playfair Display", serif;
+      }
+
       p {
         color: rgb(85, 82, 82);
         font-size:1.5em;
@@ -420,9 +405,6 @@ html, body {
               height:8em;
             }
           }
-          .project_description{
-            // border:purple solid;
-          }
         }
       }
     }
@@ -435,11 +417,9 @@ html, body {
       margin-left:0;
       padding:0;
       width:100%;
-      // border: red solid;
       justify-items: start;
       .project_container{
         .project_content{
-          // border:green solid;
           .project_media{
             iframe{
               width:13em;
@@ -450,9 +430,6 @@ html, body {
               height:7em;
             }
           }
-          .project_description{
-            // border:purple solid;
-          }
         }
       }
     }
@@ -460,23 +437,14 @@ html, body {
 }
 @media screen and (max-width: 380px) {
   .section.projects{
-    // border:orange solid;
     .projects_main_container{
       padding:0;
       margin-left:0;
-      // border: red solid;
       justify-items: start;
       .project_container{
-        // border:blue solid;
         margin-left:0;
         height:100%;
         width:23em;
-        .project_content{
-          // border:green solid;
-          .project_description{
-            // border:purple solid;
-          }
-        }
       }
     }
   }
@@ -485,21 +453,16 @@ html, body {
   background: url(https://srpics.s3-us-west-1.amazonaws.com/pexels-photo-983493.jpeg);
   background-size: cover;
   background-position: center;
-  // align-items: center;
 
   .contacts_container{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // align-items:center;
-    // border:black solid;
     width:100%;
     height:100%;
-    // border:green solid;
 
     
     .contacts_content{
-      // border:red solid;
       margin-top:5em;
       width:100%;
       height:80%;
@@ -510,16 +473,12 @@ html, body {
       margin-left:20%;
       height:40em;
       width:70%;
-      // border:purple solid;
       
       .contacts_heading{
-        // border:blue solid;
         margin-top:2em;
         img {
-          // height:20rem;
           width: 19em;
           border-radius: 15%;
-          // opacity: 0.9;
           filter: grayscale(5%);
         
         
@@ -530,13 +489,11 @@ html, body {
     .contacts_icons{
       position:relative;
       display:grid;
-      // border:yellow solid;
       grid-template-rows: repeat(5,1fr);
       padding-left: 14%;
       height:70%;
       .icon{
         margin-top:0;
-        // border:green solid;
         a {
           text-decoration: none;
           margin:0;
@@ -550,7 +507,6 @@ html, body {
 @media screen and (max-width: 700px) {
   .section.contact{
     .contacts_container {
-      // height:20rem;
       .contacts_content{
         .contacts_heading{
           img{
@@ -565,16 +521,12 @@ html, body {
 @media screen and (max-width: 420px) {
   .section.contact{
     .contacts_container {
-      // border:black solid;
-      // height:20rem;
       .contacts_content{
         margin-top:70%;
-        // border:red solid;
         margin-left:0;
         width:100%;
         height:60%;
         .contacts_heading{
-          // border:green solid;
           margin-top:30%;
           width:100%;
           img{
@@ -588,29 +540,17 @@ html, body {
 @media screen and (max-width: 380px) {
   .section.contact{
     .contacts_container {
-      // border:black solid;
-      // height:20rem;
       .contacts_content{
         margin-top:75%;
-        // border:red solid;
         margin-left:0;
         width:100%;
         height:60%;
         .contacts_heading{
-          // border:green solid;
           margin-top:30%;
           width:100%;
           img{
             width: 9em;
           }
-        }
-      }
-      .contacts_icons{
-        // margin-top:70%;
-        // border:purple solid;
-        .icon{
-          // border:blue solid;
-          
         }
       }
     }

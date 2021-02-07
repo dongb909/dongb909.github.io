@@ -3,21 +3,25 @@ import Typed from 'react-typed';
 
 function Home () { 
   return ( 
-    <div className="section home">
+    <section className="section home">
       <a id="homelinked"></a>
-      <div className="welcome">
+      <div id="homeVideo">
+
+      <video src="../public/code.mp4" muted loop autoPlay></video>
+      </div>
+      <div className="welcomeOverlay">
         <div className="home_content">
-          <br/>
-          <br/>
-          <h2>Hi! My name is </h2>
-          <h1 id="homeTitle"><Typed strings={["Rachel Dong"]} typeSpeed={100} startDelay={80}/></h1>
-          <h2 id="homeSubtitle"><Typed strings={["Welcome to my page", "I'm a Software Engineer", "Web Developer", "Avid Reader", "AND!!!","Lifelong Learner"]} typeSpeed={60} backSpeed={20} startDelay={200} loop/></h2>
-          <br/>
-          <br/>
-          <a href="#aboutbuttonlinked"><button>ABOUT ME</button></a>
+          <h1 id="greeting">Hi! My name is </h1>
+          <h1 id="name">Rachel Dong.</h1>
+          <h1 id="homeTitle"></h1>
+          <h1 id="description"><Typed strings={["I'm a Software Engineer", "who loves building applications for the web"]} typeSpeed={60} backSpeed={10} startDelay={200} loop/></h1>
         </div>          
       </div>
-    </div>
+      {/* <div id="nextBtn">
+        <a href="#aboutbuttonlinked"><button>ABOUT ME</button></a>
+
+      </div> */}
+    </section>
   );
 }
 

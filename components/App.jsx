@@ -12,9 +12,9 @@ import Navbar from './Navbar';
       <div>
         <Navbar />
         <div className="mainContainer">
+          <About/>
           <Home/>
           <a id="aboutbuttonlinked"></a>
-          <About/>
           <Projects/>
           <Contact/>
         </div>

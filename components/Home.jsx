@@ -14,7 +14,7 @@ function Home () {
           <h1 id="greeting">Hi! My name is </h1>
           <h1 id="name">Rachel Dong.</h1>
           <h1 id="homeTitle"></h1>
-          <h1 id="description"><Typed strings={["I'm a Software Engineer", "who loves building applications for the web"]} typeSpeed={60} backSpeed={10} startDelay={200} loop/></h1>
+          <h1 id="description"><Typed strings={["I'm a people-oriented, Software Engineer based in San Francisco Bay Area with an eye for design and a knack for problem-solving."]} typeSpeed={50} backSpeed={10} loop/></h1>
         </div>          
       </div>
       <div id="nextBtn">

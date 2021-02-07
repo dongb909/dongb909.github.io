@@ -3,24 +3,23 @@ import Skills from './Skills'
 
 function About () {
   return (
-    <div className='section about'>
+    <section id='about' className="clearfix">
       <a id="aboutlinked"></a>
-      <div className='about_content'>
-        <h1>Hmm a bit about me</h1>
-        <p>I am very fortunate to have grown up in the heart of Silicon Valley.</p>
-        <p>I am a full-stack engineer with focus on front-end development.</p>
-        <p>I was attracted to software engineering after discovering the fact that everyone in this field has the mentality where  
-           the sky's the limit.</p>
-        <p><strong>BUT!</strong> I fell in love with it after the very first time I saw the code I wrote came to life on screen.</p>
-        <p>I am either working on a project, leetcoding or working on my personal growth and mental health through reading, meal prepping, listening to podcasts and traveling.</p>
-        <p>Making bold moves and solving hard problems are what drive me every day.</p> 
-        <p>Self-awareness, empathy, and interpersonal skills are some of my strongest points. </p>
-        {/* <p>Additionally, with over 5 years' worth of experience working with various interdisciplinary teams of healthcare professionals and patient populations. 
-          Therefore, self-awareness, empathy and interpersonal skills are some of my strongest points. Not to mention that my name means "humanitarianism"!</p> */}
-        <p>Below are some of the technologies I work with:</p>
-      </div>
-      <Skills/>
-    </div>
+      <div id="myPhoto"> <img src="../public/cafe.jpg" alt="My profile picture"/></div>
+      {/* <div id='about_content'> */}
+        <div id="aboutDescr" className="one">
+          <h1>About <span>Me</span></h1>
+          <p>Welcome to my page! My name is Rachel and I am a Pharmacist turned Software Developer. Although I loved achieving the goal of being able to empower patients to live healthier lives, after 4 years of working alongside interdisciplinary teams of providers to care for diverse patient populations, I felt that the tools and systems we were using were just not efficient enough nor far-reaching enough to make the impact I wanted to achieve.</p>
+          <p>I fell in love with software engineering for how forward-thinking and open to change this field is. I was instantly hooked after building my first beautiful and fully scaled microservice and have been excited to be a part of the movement towards innovation and efficient products ever since! No surprise because making bold moves and solving hard problems are what drive me every day.</p> 
+          <p>When I'm not coding away, I am either working on my personal growth and mental health through reading, meal prepping, listening to podcasts or traveling.</p>
+        </div>
+        {/* <div id="skillsList" className="three">
+        <p>These are some of the technologies I work with:</p>
+        <Skills/>
+      </div> */}
+
+      {/* </div> */}
+    </section>
   )
 }
 

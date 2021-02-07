@@ -44,76 +44,73 @@ body {
   }
 }
 
-#nextBtn{
-  z-index:3;
-  position:absolute;
-  left:50%;
+#nextBtn {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
   transform: (translateX(-50%));
-  bottom:10%;
+  bottom: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  #mouse{
-    height:4rem;
+
+  #mouse {
+    height: 4rem;
     width: 2rem;
     border: 3px solid white;
     border-radius: 2rem;
     display: flex;
 
-    span{
-      height:.8rem;
-      width:.8rem;
-      display:block;
-      background-color:white;
+    span {
+      height: 0.8rem;
+      width: 0.8rem;
+      display: block;
+      background-color: white;
       border-radius: 50%;
-      margin:auto;
-      animation: mouseClick .7s linear infinite;
+      margin: auto;
+      animation: mouseClick 0.7s linear infinite;
     }
-
   }
-  #arrow span{
-    height:.8rem;
-    width:.8rem;
+  #arrow span {
+    height: 0.8rem;
+    width: 0.8rem;
     border-right: 3px solid #fff;
     border-bottom: 3px solid #fff;
     transform: rotate(45deg);
-    margin-top: .4rem;
-    margin-left:30%;
+    margin-top: 0.4rem;
+    margin-left: 30%;
     display: block;
-    animation: arrowDown .3s alternate infinite;
-  }
-
-}
-
-@keyframes mouseClick{
-  0%{
-    opacity:0;
-    transform:translateY(-.5rem);
-  }
-  100%{
-    opacity:1;
-    transform:translateY(1rem);
-  }
-}
-@keyframes arrowDown{
-  0%{
-    opacity:0;
-  }
-  25%{
-    opacity:.25;
-  }
-  50%{
-    opacity:.50;
-  }
-  75%{
-    opacity:.75;
-  }
-  100%{
-    opacity:1;
+    animation: arrowDown 0.3s alternate infinite;
   }
 }
 
+@keyframes mouseClick {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+@keyframes arrowDown {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media screen and (max-width: 700px) {
   // USE class name .navbar not the selector nav element or else it won't work
@@ -222,13 +219,16 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
+
   // background-color:black;
   // font-size: 2rem;
+  overflow-y: hidden;
   position: relative;
   border: black solid 1px;
   #homeVideo {
     position: absolute;
     z-index: -2;
+    opacity: 0.9;
   }
   video {
     object-fit: fill;
@@ -260,7 +260,10 @@ body {
       font-size: 6rem;
       font-family: "Playfair Display", serif;
       text-decoration: underline;
-      padding-bottom: 2%;
+      // border: 5px solid white;
+      // padding-left: 0;
+
+      margin-bottom: 1rem;
     }
     #description {
       font-size: 2.3em;
@@ -272,6 +275,14 @@ body {
     // }
   }
 }
+@media screen and (max-width: 900px) {
+  .home {
+    #name {
+      font-size: 10px;
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .home {
     height: 100px;
@@ -279,8 +290,8 @@ body {
       .home_content {
         margin-top: 35%;
       }
-      h1 {
-        font-size: 2em;
+      #name {
+        font-size: 10px;
       }
       p {
         font-size: 1em;
@@ -289,92 +300,194 @@ body {
   }
 }
 
-.section.about {
-  background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  // border:purple solid;
-  height: 100%;
+#about {
+  // background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
+  // background-size: cover;
+  // background-position: center;
+  background-color: white;
+  // position: relative;
   width: 100%;
-  display: grid;
-  grid-template-rows: 5fr 3fr;
-  grid-template-areas:
-    "box1"
-    "box2";
-  justify-items: center;
-  // grid-row-gap:2em;
+  height: auto;
+  position: relative;
+  overflow-y: visible;
+  font-family: Georgia, "Times New Roman", Times, serif;
 
-  .about_content {
-    margin-top: 5em;
-    // padding-top:2em;
-    position: absolute;
-    grid-area: box1;
-    // border:green solid;
-    height: 80%;
-    width: 80%;
+  #aboutDescr {
+    // grid-column:1/5;
+    // grid-row:1;
+    position: relative;
+    height: 100%;
+    width: 60%;
+    padding-left: 7%;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    h1 {
+      font-family: "Playfair Display", serif;
+      padding-left: 35%;
+      padding-bottom: 1rem;
+      font-size: 3rem;
+      ::after,
+      ::before {
+        content: "";
+        height: 2px;
+        width: 100px;
+        position: absolute;
+        background-color: lightgrey;
+        left: 50%;
+      }
+      ::after {
+        top: 135px;
+      }
+
+      span {
+        color: rgba(85, 183, 190, 0.8);
+        font-weight: bold;
+      }
+    }
+
+    // border: 6px green solid;
     p {
-      margin: 1.5% 0;
-      font-size: 1.2em;
+      margin: 3% 0;
+      font-size: 1.4rem;
+    }
+    p:first-letter {
+      color: rgba(85, 183, 190, 0.8);
+      font-weight: bold;
+    }
+    p:first-of-type:first-letter {
+      font-size: 65px;
+      padding-right: 8px;
+
+      float: left;
+      line-height: 0.7;
+      padding-bottom: 0;
     }
   }
-  .skills_container {
-    grid-area: box2;
-    position: absolute;
-    background-color: rgba(225, 225, 225, 0.6);
-    width: 97vw;
-    height: 29vh;
-    justify-items: center;
-    // border:blue solid;
-
-    .skills_grid {
-      display: grid;
-      position: relative;
-      height: 95%;
-      width: 100%;
-      // border:red solid;
-      grid-auto-rows: 100px;
-      grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 2em;
-      grid-row-gap: 0;
+  #myPhoto {
+    // grid-column:5/7;
+    // grid-row:1;
+    // border: 3px red solid;
+    img {
+      height: 100%;
+      // width:40vw;
+      width: 35%;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-    .skill {
-      // border: black solid;
-      text-align: center;
+
+    // }
+  }
+//   #skillsList {
+//     grid-row: 2;
+//     position: absolute;
+//     background-color: rgba(225, 225, 225, 0.6);
+//     width: 97vw;
+//     height: 29vh;
+//     justify-items: center;
+//     border: blue solid;
+// 
+//     .skills_grid {
+//       display: grid;
+//       position: relative;
+//       height: 95%;
+//       width: 100%;
+//       // border:red solid;
+//       grid-auto-rows: 100px;
+//       grid-template-columns: repeat(4, 1fr);
+//       grid-column-gap: 2em;
+//       grid-row-gap: 0;
+//     }
+//     .skill {
+//       // border: black solid;
+//       text-align: center;
+//     }
+//   }
+}
+@media only screen and (max-width: 1200px) {
+  #about {
+    #aboutDescr {
+      padding-top: 30px;
+      padding-right: 5%;
+      width: 100%;
+      h1 {
+        ::before,
+        ::after {
+          left: (45%);
+          border: 0.5px solid lightgrey;
+        }
+        ::after {
+          top: 100px;
+        }
+      }
+    }
+    #myPhoto {
+      width: 100%;
+      height: 500px;
+      margin-top: 2rem;
+      img {
+        position: relative;
+        left: 50%;
+        height:500px;
+        width:500px;
+        transform: translateX(-50%);
+        box-shadow: -8px 8px 20px 7px rgba(0, 0, 0, 0.4);
+        // height: 10px;
+      }
     }
   }
 }
-@media screen and (max-width: 700px) {
-  .section.about {
-    grid-template-rows: 7fr 4fr;
-    .about_content {
-      margin-top: 4em;
-      width: 95%;
-      p {
-        font-size: 1em;
-        margin: 3%;
-      }
-    }
-    .skills_container {
-      .skills_grid {
-        grid-column-gap: 0;
+@media screen and (max-width: 900px) {
+  #about {
+    #myPhoto {
+      width: 100%;
+      height: 400px;
+      margin-top: 3rem;
+      img{
+        height:400px;
+        width:400px;
       }
     }
   }
 }
 @media screen and (max-width: 400px) {
-  .section.about {
-    grid-template-rows: 8fr 3fr;
-    .about_content {
-      width: 95%;
-      margin-top: 2em;
-      p {
-        // margin: 30% 0;
+  #about {
+    #aboutDescr {
+      padding-top: 120px;
+      padding-right: 5%;
+      width: 100%;
+      h1 {
+        font-size:1.5rem;
+        ::before,
+        ::after {
+          width:4rem;
+        }
+        ::after {
+          top: 155px;
+        }
+      }
+      p{
+        margin-top:15px;
+        font-size:12px;;
+      }
+      p:first-of-type:first-letter {
+        font-size: 50px;
+        padding-right: 4px;
+  
+        float: left;
+        line-height: 0.6;
+        padding-bottom: 0;
       }
     }
-    .skills_container {
-      .skills_grid {
-        grid-column-gap: 0;
+    #myPhoto {
+      width: 100%;
+      height: 200px;
+      margin-top: 0;
+
+      img{
+        height:300px;
+        width:100%;
+        box-shadow: -4px 3px 10px 3px rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -384,7 +497,6 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
-  // border:green solid;
   width: 100%;
 
   h1 {
@@ -402,7 +514,6 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     height: 70%;
-    // justify-items: center;
 
     h1 {
       font-size: medium;
@@ -418,18 +529,6 @@ body {
       img {
         width: 23em;
         height: 15em;
-      }
-
-      .project_description {
-        // margin: 0 2%;
-        // background-color: rgba(246, 250, 250, 0.4);
-        // a {
-        //   h1{
-        //     text-decoration: none
-
-        //   }
-        // }
-        // border:grey solid
       }
     }
   }

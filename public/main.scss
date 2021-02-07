@@ -8,6 +8,7 @@ html,
 body {
   font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
+  font-size: 16px;
 }
 
 .navbar {
@@ -27,21 +28,91 @@ body {
     letter-spacing: 0.1rem;
     margin-left: auto;
     margin-right: 2.5rem;
-    
+
     li a {
       color: white;
       text-decoration: none;
       padding: 1rem;
 
-      font-weight:700;
-      
+      font-weight: 700;
+
       &:hover {
-        background-color:rgba(101, 188, 194, 0.8);;
+        background-color: rgba(101, 188, 194, 0.8);
         color: black;
       }
     }
   }
 }
+
+#nextBtn{
+  z-index:3;
+  position:absolute;
+  left:50%;
+  transform: (translateX(-50%));
+  bottom:10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  #mouse{
+    height:4rem;
+    width: 2rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    display: flex;
+
+    span{
+      height:.8rem;
+      width:.8rem;
+      display:block;
+      background-color:white;
+      border-radius: 50%;
+      margin:auto;
+      animation: mouseClick .7s linear infinite;
+    }
+
+  }
+  #arrow span{
+    height:1rem;
+    width:1rem;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    margin-top: .5rem;
+    display: block;
+    animation: arrowDown .2s alternate infinite;
+  }
+
+}
+
+@keyframes mouseClick{
+  0%{
+    opacity:0;
+    transform:translateY(-.5rem);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(1rem);
+  }
+}
+@keyframes arrowDown{
+  0%{
+    opacity:0;
+  }
+  25%{
+    opacity:.25;
+  }
+  50%{
+    opacity:.50;
+  }
+  75%{
+    opacity:.75;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
 
 @media screen and (max-width: 700px) {
   // USE class name .navbar not the selector nav element or else it won't work
@@ -71,13 +142,14 @@ body {
       );
       transition: transform 0.5s ease-in-out;
       transform: translateX(-100%);
-      li a{
-        color:white;
-        font-size:1.5rem;
-
+      li a {
+        color: white;
+        font-size: 1.5rem;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
       }
-    
-    
     }
   }
 
@@ -99,7 +171,6 @@ body {
         25% 50%,
         0% 0%
       );
-      
     }
     &:hover {
       cursor: pointer;
@@ -117,6 +188,7 @@ body {
 .mainContainer {
   // scroll-snap-type: y proximity;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   // -ms-scroll-snap-type: mandatory;
@@ -129,7 +201,7 @@ body {
 .section {
   scroll-snap-align: start;
   height: 100%;
-  color: white;
+  // color: white;
   // scroll-snap-align: center;
   // scroll-snap-stop: always;
   color: black;
@@ -153,12 +225,12 @@ body {
   // font-size: 2rem;
   position: relative;
   border: black solid 1px;
-  #homeVideo{
-    position:absolute;
+  #homeVideo {
+    position: absolute;
     z-index: -2;
   }
-  video{
-    height:100vh;
+  video {
+    object-fit: fill;
   }
 
   .welcomeOverlay {
@@ -172,7 +244,7 @@ body {
       height: 40%;
       top: 50%;
       left: 50%;
-      width:70%;
+      width: 70%;
       transform: translate(-50%, -50%);
       position: relative;
       // background-color: rgba(183, 223, 223, 0.7);
@@ -180,35 +252,23 @@ body {
     #greeting {
       font-size: 2.3em;
       // color: rgb(129, 180, 201);
-      color:white;
+      color: white;
     }
     #name {
-      color:white;
+      color: white;
       font-size: 6rem;
       font-family: "Playfair Display", serif;
       text-decoration: underline;
-      padding-bottom:2%;
+      padding-bottom: 2%;
     }
     #description {
       font-size: 2.3em;
-      color:white;
+      color: white;
     }
 
-    #nextBtn {
-      z-index: 4;
-      top:100%;
-      bottom:50%;
-      // transform:(translate(50%, 50%));
-       button {
-        transition-duration: 0.4s;
-
-      &:hover {
-        background: rgba(240, 194, 201, 0.5);
-        cursor: pointer;
-      }
-    }
-    }
-   
+    // #nextBtn {
+    //
+    // }
   }
 }
 @media screen and (max-width: 400px) {

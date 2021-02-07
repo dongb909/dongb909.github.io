@@ -17,10 +17,17 @@ function Home () {
           <h1 id="description"><Typed strings={["I'm a Software Engineer", "who loves building applications for the web"]} typeSpeed={60} backSpeed={10} startDelay={200} loop/></h1>
         </div>          
       </div>
-      {/* <div id="nextBtn">
-        <a href="#aboutbuttonlinked"><button>ABOUT ME</button></a>
+      <div id="nextBtn">
+        <a href="#aboutbuttonlinked">
+          <div id="mouse">
+            <span></span>
+          </div>
+          <div id="arrow">
+            <span></span>
+          </div>
+        </a>
 
-      </div> */}
+      </div>
     </section>
   );
 }

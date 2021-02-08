@@ -2,6 +2,7 @@ import React from 'react';
 
 const Skills = () => {
   return ( 
+    <section>
     <div className="skills_container">
       <div className="skills_grid">
         <div className="skill react">
@@ -98,6 +99,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
+    </section>
    );
 }
  

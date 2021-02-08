@@ -5,6 +5,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Navbar from './Navbar';
+import Skills from './Skills';
 
 
  function App () {
@@ -12,11 +13,12 @@ import Navbar from './Navbar';
       <div>
         <Navbar />
         <div className="mainContainer">
-          <About/>
           <Home/>
+          {/* <Skills/> */}
+          {/* <Projects/> */}
+          <About/>
           <a id="aboutbuttonlinked"></a>
-          <Projects/>
-          <Contact/>
+          {/* <Contact/> */}
         </div>
       </div>
      );

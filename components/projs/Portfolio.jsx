@@ -5,11 +5,6 @@ function Portfolio () {
     <div id="proj1" className='project_container card'>
       <div className="project_content card_content">
         <div className="project_media front">
-          {/* <a href="https://srpics.s3-us-west-1.amazonaws.com/portfoliohompage.png"
-            target="_blank" 
-            rel="noopener noreferrer">
-          </a> */}
-          
             <img src="https://srpics.s3-us-west-1.amazonaws.com/portfoliohompage.png">
             </img>
         </div>

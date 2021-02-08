@@ -1,8 +1,10 @@
 import React from 'react';
 import Air6n6 from './projs/Air6n6';
 import DataFi from './projs/DataFi';
-import GroceriVibes from './projs/GroceriVibes';
+import ColorGame from './projs/colorGame';
 import Portfolio from './projs/Portfolio';
+import Goals from './projs/Goals';
+import WonderLust from './projs/WonderLust';
 
 function Projects () {
   return (
@@ -13,7 +15,9 @@ function Projects () {
         <Portfolio/>
         <Air6n6/>
         <DataFi/>
-        <GroceriVibes/>
+        <ColorGame/>
+        <Goals/>
+        <WonderLust/>
       </div>
     </section>
   )

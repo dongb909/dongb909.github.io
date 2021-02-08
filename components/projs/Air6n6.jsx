@@ -5,9 +5,9 @@ function Air6n6 () {
     <div id="proj3" className='project_container'>
       <div className="project_content">
         <div className="project_media medi front">
-          <iframe 
-            src="https://www.youtube.com/embed/VhR5Ccf0Bms?autoplay=1">
-          </iframe>
+          <img
+            src="../public/air6n6.png">
+          </img>
         </div>
         <div className="project_description back">
           <a href="https://github.com/Air6n6/Recommendation"><h1>RENTAL LISTINGS</h1></a>

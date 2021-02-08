@@ -26,7 +26,6 @@ function Home () {
             <span></span>
           </div>
         </a>
-
       </div>
     </section>
   );

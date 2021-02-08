@@ -1,5 +1,4 @@
 import React from 'react';
-import Skills from './Skills'
 
 function About () {
   return (
@@ -13,10 +12,6 @@ function About () {
           <p>I fell in love with software engineering for how forward-thinking and open to change this field is. I was instantly hooked after building my first beautiful and fully scaled microservice and have been excited to be a part of the movement towards innovation and efficient products ever since! No surprise because making bold moves and solving hard problems are what drive me every day.</p> 
           <p>When I'm not coding away, I am either working on my personal growth and mental health through reading, meal prepping, listening to podcasts or traveling.</p>
         </div>
-        {/* <div id="skillsList" className="three">
-        <p>These are some of the technologies I work with:</p>
-        <Skills/>
-      </div> */}
 
       {/* </div> */}
     </section>

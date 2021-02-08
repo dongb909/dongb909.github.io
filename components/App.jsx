@@ -13,10 +13,10 @@ import Skills from './Skills';
       <div>
         <Navbar />
         <div className="mainContainer">
-          <Home/>
-          {/* <Skills/> */}
-          {/* <Projects/> */}
+          <Projects/>
+          {/* <Home/>
           <About/>
+          <Skills/> */}
           <a id="aboutbuttonlinked"></a>
           {/* <Contact/> */}
         </div>

@@ -6,17 +6,18 @@ import Portfolio from './projs/Portfolio';
 
 function Projects () {
   return (
-    <div className='section projects'>
+    <section className='projects'>
       <a id="projectslinked"></a>
       <h1>PROJECTS</h1>
-      {/* <p><strong>.....................</strong></p> */}
       <div className="projects_main_container">
         <Portfolio/>
         <Air6n6/>
         <DataFi/>
         <GroceriVibes/>
       </div>
-    </div>
+    </section>
   )
 }
 export default Projects;
+
+

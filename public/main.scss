@@ -11,6 +11,9 @@ body {
   font-size: 16px;
 }
 
+/********************************************
+******** Navbar *****************************
+********************************************/
 .navbar {
   // background: rgb(221, 217, 217);
   position: fixed;
@@ -41,74 +44,6 @@ body {
         color: black;
       }
     }
-  }
-}
-
-#nextBtn {
-  z-index: 3;
-  position: absolute;
-  left: 50%;
-  transform: (translateX(-50%));
-  bottom: 4%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  #mouse {
-    height: 4rem;
-    width: 2rem;
-    border: 3px solid white;
-    border-radius: 2rem;
-    display: flex;
-
-    span {
-      height: 0.8rem;
-      width: 0.8rem;
-      display: block;
-      background-color: white;
-      border-radius: 50%;
-      margin: auto;
-      animation: mouseClick 0.7s linear infinite;
-    }
-  }
-  #arrow span {
-    height: 0.8rem;
-    width: 0.8rem;
-    border-right: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    transform: rotate(45deg);
-    margin-top: 0.4rem;
-    margin-left: 30%;
-    display: block;
-    animation: arrowDown 0.3s alternate infinite;
-  }
-}
-
-@keyframes mouseClick {
-  0% {
-    opacity: 0;
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(1rem);
-  }
-}
-@keyframes arrowDown {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -214,6 +149,82 @@ body {
   visibility: visible;
 }
 
+/********************************************
+******** HOME's next button *****************
+********************************************/
+
+#nextBtn {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: (translateX(-50%));
+  bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #mouse {
+    height: 4rem;
+    width: 2rem;
+    border: 3px solid white;
+    border-radius: 2rem;
+    display: flex;
+
+    span {
+      height: 0.8rem;
+      width: 0.8rem;
+      display: block;
+      background-color: white;
+      border-radius: 50%;
+      margin: auto;
+      animation: mouseClick 0.7s linear infinite;
+    }
+  }
+  #arrow span {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
+    margin-top: 0.4rem;
+    margin-left: 30%;
+    display: block;
+    animation: arrowDown 0.3s alternate infinite;
+  }
+}
+
+@keyframes mouseClick {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+@keyframes arrowDown {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/********************************************
+******** HOME *****************
+********************************************/
+
 .home {
   background-size: cover;
   background-position: center;
@@ -226,7 +237,7 @@ body {
     z-index: -2;
     opacity: 0.9;
   }
-  
+
   video {
     object-fit: fill;
   }
@@ -268,41 +279,37 @@ body {
   video {
     height: 100%;
   }
-  .home .welcomeOverlay{
+  .home .welcomeOverlay {
     .home_content {
-      top: 40%;
+      top: 50%;
     }
-      #greeting {
-        font-size: 2rem;
-      }
-      #name {
-        font-size: 5rem;
-        font-family: "Playfair Display", serif;
-        text-decoration: underline;
-      }
-      #description {
-           font-size: 1.5rem;
-         }
+    #greeting {
+      font-size: 2rem;
+    }
+    #name {
+      font-size: 5rem;
+    }
+    #description {
+      font-size: 1.5rem;
+    }
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .home {
-    .welcomeOverlay{
+    .welcomeOverlay {
       .home_content {
         top: 40%;
       }
-        #greeting {
-          font-size: 1.5rem;
-        }
-        #name {
-          font-size: 4rem;
-          font-family: "Playfair Display", serif;
-          text-decoration: underline;
-        }
-        #description {
-             font-size: 1.2rem;
-           }
+      #greeting {
+        font-size: 1.5rem;
+      }
+      #name {
+        font-size: 4rem;
+      }
+      #description {
+        font-size: 1.2rem;
+      }
     }
     #nextBtn {
       z-index: 3;
@@ -315,7 +322,7 @@ body {
         height: 2rem;
         width: 1rem;
         border-width: 2px;
-    
+
         span {
           height: 0.3rem;
           width: 0.3rem;
@@ -324,11 +331,15 @@ body {
       #arrow span {
         height: 0.5rem;
         width: 0.5rem;
-        border-width:2px;
+        border-width: 2px;
       }
     }
   }
 }
+
+/********************************************
+******** ABOUT ME *****************************
+********************************************/
 
 #about {
   // background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
@@ -435,8 +446,8 @@ body {
       img {
         position: relative;
         left: 50%;
-        height:500px;
-        width:500px;
+        height: 500px;
+        width: 500px;
         transform: translateX(-50%);
         box-shadow: -8px 8px 20px 7px rgba(0, 0, 0, 0.4);
         // height: 10px;
@@ -450,14 +461,14 @@ body {
       width: 100%;
       height: 400px;
       margin-top: 3rem;
-      img{
-        height:400px;
-        width:400px;
+      img {
+        height: 400px;
+        width: 400px;
       }
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 405px) {
   #about {
     #aboutDescr {
       padding-top: 120px;
@@ -465,23 +476,24 @@ body {
       height: 1px;
       width: 100%;
       h1 {
-        font-size:1.5rem;
+        padding-left: 35%;
+        font-size: 1.5rem;
         ::before,
         ::after {
-          width:4rem;
+          width: 4rem;
         }
         ::after {
           top: 155px;
         }
       }
-      p{
-        margin-top:15px;
-        font-size:12px;;
+      p {
+        margin-top: 15px;
+        font-size: 12px;
       }
       p:first-of-type:first-letter {
         font-size: 50px;
         padding-right: 4px;
-  
+
         float: left;
         line-height: 0.6;
         padding-bottom: 0;
@@ -492,74 +504,122 @@ body {
       height: 200px;
       margin-top: 0;
 
-      img{
-        height:300px;
-        width:100%;
+      img {
+        height: 300px;
+        width: 100%;
         box-shadow: -4px 3px 10px 3px rgba(0, 0, 0, 0.4);
       }
     }
   }
 }
-// section #mySkills{
-//   height: 300px;
-//   #skillsList {
-//     grid-row: 2;
-//     position: absolute;
-//     background-color: rgba(225, 225, 225, 0.6);
-//     width: 97vw;
-//     height: 29vh;
-//     justify-items: center;
-//     border: blue solid;
-// 
-//     .skills_grid {
-//       display: grid;
-//       position: relative;
-//       height: 95%;
-//       width: 100%;
-//       // border:red solid;
-//       grid-auto-rows: 100px;
-//       grid-template-columns: repeat(4, 1fr);
-//       grid-column-gap: 2em;
-//       grid-row-gap: 0;
-//     }
-//     .skill {
-//       // border: black solid;
-//       text-align: center;
-//     }
-//   }
-// 
-// }
 
+/********************************************
+******************** Skills *****************
+********************************************/
 
-.section.projects {
+#skillsList {
+  background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_photo-1506988038666-496173f39dea.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: relative;
+  grid-row: 2;
+  width: 100%;
+  height: auto;
+  padding-bottom: 4%;
+  justify-items: center;
+  #skillsOverlay {
+    position: absolute;
+    background-color: rgba(176, 201, 207, 0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    padding: 3rem 0 1rem 5%;
+    font-family: "Playfair Display", serif;
+  }
+
+  .skills_grid {
+    display: grid;
+    position: relative;
+    padding-top: 20px;
+    height: 60%;
+    width: 100%;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 0;
+  }
+  .skill {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #skillsList {
+    // border: 3px solid red;
+    padding-left: 3%;
+    padding-right: 3%;
+    h1 {
+      font-size: 1.2rem;
+      // color:red;
+    }
+    .skills_grid {
+      grid-column-gap: 0.9rem;
+    }
+  }
+}
+/********************************************
+******************** PROJECTS *****************
+********************************************/
+
+.projects {
   background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-3759098.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
   width: 100%;
+  height: auto;
+  padding: 4rem 0;
 
   h1 {
-    padding-top: 1.5em;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    // border:black solid;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
   }
   .projects_main_container {
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "proj1 proj2 proj3"
+      "proj4 proj5 proj6";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin: 0 3%;
+    height: 100%;
+    // border: 2px solid black;
+
+    .project_container {
+      border: 1px solid brown;
+
+      .project_content {
+        border: 1px solid purple;
+        height: 100%;
+      }
+    }
 
     h1 {
-      font-size: medium;
+      font-size: 1rem;
       text-decoration: underline;
       color: black;
       padding-top: 0;
+      font-weight: 500;
     }
+
     .project_media {
       iframe {
         width: 23em;
@@ -570,16 +630,36 @@ body {
         height: 15em;
       }
     }
+    #proj1 {
+      grid-area: proj1;
+    }
+
+    #proj2 {
+      grid-area: proj2;
+    }
+
+    #proj3 {
+      grid-area: proj3;
+    }
+
+    #proj4 {
+      grid-area: proj4;
+    }
   }
 }
-@media screen and (max-width: 700px) {
-  .section.projects {
-    // border:orange solid;
+@media only screen and (max-width: 1200px) {
+  .projects {
     h1 {
       padding-top: 1.8em;
       font-size: x-large;
     }
     .projects_main_container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "proj1 proj2"
+        "proj3 proj4"
+        "proj5 proj6";
       .project_container {
         .project_content {
           .project_media {
@@ -598,22 +678,24 @@ body {
   }
 }
 
-@media screen and (max-width: 550px) {
-  .section.projects {
-    // border:orange solid;
+@media screen and (max-width: 700px) {
+  .projects {
     h1 {
-      padding-top: 1.8em;
+      padding-top: 1.8rem;
       font-size: x-large;
     }
     .projects_main_container {
-      grid-template-columns: 100%;
-      grid-template-rows: 1fr;
-      grid-row-gap: 1%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas:
+        "proj1"
+        "proj2"
+        "proj3"
+        "proj4"
+        "proj5"
+        "proj6";
       align-items: center;
-      margin-left: 3%;
-      padding: 0;
-      width: 95%;
-      // border: red solid;
+      margin: 0;
       justify-items: center;
       h1 {
         font-size: small;
@@ -622,10 +704,10 @@ body {
         font-size: small;
       }
       .project_container {
-        // border:blue solid;
         margin-left: 0;
-        height: 100%;
-        width: 100%;
+        margin-right: 0;
+        height: 300px;
+        width: 500px;
         .project_content {
           // border:green solid;
           .project_media {
@@ -644,14 +726,15 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .section.projects {
+@media screen and (max-width: 460px) {
+  .projects {
     .projects_main_container {
-      margin-left: 0;
-      padding: 0;
       width: 100%;
       justify-items: start;
+      grid-row-gap: 0;
       .project_container {
+        height: auto;
+        width: 100%;
         .project_content {
           .project_media {
             iframe {
@@ -668,20 +751,11 @@ body {
     }
   }
 }
-@media screen and (max-width: 380px) {
-  .section.projects {
-    .projects_main_container {
-      padding: 0;
-      margin-left: 0;
-      justify-items: start;
-      .project_container {
-        margin-left: 0;
-        height: 100%;
-        width: 23em;
-      }
-    }
-  }
-}
+
+/********************************************
+******************** CONTACTS *****************
+********************************************/
+
 .contact {
   background: url(https://srpics.s3-us-west-1.amazonaws.com/pexels-photo-983493.jpeg);
   background-size: cover;
@@ -734,7 +808,7 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .section.contact {
+  .contact {
     .contacts_container {
       .contacts_content {
         .contacts_heading {
@@ -748,7 +822,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-  .section.contact {
+  .contact {
     .contacts_container {
       .contacts_content {
         margin-top: 70%;
@@ -767,7 +841,7 @@ body {
   }
 }
 @media screen and (max-width: 380px) {
-  .section.contact {
+  .contact {
     .contacts_container {
       .contacts_content {
         margin-top: 75%;

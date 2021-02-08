@@ -1,0 +1,174 @@
+import DataFi from './projs/DataFi';
+import GroceriVibes from './projs/GroceriVibes';
+import Portfolio from './projs/Portfolio';
+
+function Projects2 () {
+  return (
+    <section className='projects'>
+      <a id="projectslinked"></a>
+      <h1>PROJECTS</h1>
+      {/* <p><strong>.....................</strong></p> */}
+      <div className="projects_main_container">
+        <Portfolio/>
+        <Air6n6/>
+        <DataFi/>
+        <GroceriVibes/>
+      </div>
+    </section>
+  )
+}
+export default Projects2;
+
+
+.projects {
+ background: url(https://srpics.s3-us-west-1.amazonaws.com/rsz_1pexels-photo-3759098.jpg);
+ background-size: cover;
+ background-position: center;
+ text-align: center;
+ width: 100%;
+ height: auto;
+
+ h1 {
+   padding-top: 1.5em;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   // border:black solid;
+ }
+ .projects_main_container {
+   display: grid;
+   position: relative;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 1em;
+   grid-row-gap: 1em;
+   margin-left: 2%;
+   margin-right: 2%;
+   height: 70%;
+
+   h1 {
+     font-size: medium;
+     text-decoration: underline;
+     color: black;
+     padding-top: 0;
+   }
+   .project_media {
+     iframe {
+       width: 23em;
+       height: 15em;
+     }
+     img {
+       width: 23em;
+       height: 15em;
+     }
+   }
+ }
+}
+@media screen and (max-width: 700px) {
+ .section.projects {
+   // border:orange solid;
+   h1 {
+     padding-top: 1.8em;
+     font-size: x-large;
+   }
+   .projects_main_container {
+     .project_container {
+       .project_content {
+         .project_media {
+           iframe {
+             width: 18em;
+             height: 11em;
+           }
+           img {
+             width: 18em;
+             height: 11em;
+           }
+         }
+       }
+     }
+   }
+ }
+}
+
+@media screen and (max-width: 550px) {
+ .section.projects {
+   // border:orange solid;
+   h1 {
+     padding-top: 1.8em;
+     font-size: x-large;
+   }
+   .projects_main_container {
+     grid-template-columns: 100%;
+     grid-template-rows: 1fr;
+     grid-row-gap: 1%;
+     align-items: center;
+     margin-left: 3%;
+     padding: 0;
+     width: 95%;
+     // border: red solid;
+     justify-items: center;
+     h1 {
+       font-size: small;
+     }
+     p {
+       font-size: small;
+     }
+     .project_container {
+       // border:blue solid;
+       margin-left: 0;
+       height: 100%;
+       width: 100%;
+       .project_content {
+         // border:green solid;
+         .project_media {
+           iframe {
+             width: 14em;
+             height: 8em;
+           }
+           img {
+             width: 14em;
+             height: 8em;
+           }
+         }
+       }
+     }
+   }
+ }
+}
+
+@media screen and (max-width: 420px) {
+ .section.projects {
+   .projects_main_container {
+     margin-left: 0;
+     padding: 0;
+     width: 100%;
+     justify-items: start;
+     .project_container {
+       .project_content {
+         .project_media {
+           iframe {
+             width: 13em;
+             height: 7em;
+           }
+           img {
+             widows: 13em;
+             height: 7em;
+           }
+         }
+       }
+     }
+   }
+ }
+}
+@media screen and (max-width: 380px) {
+ .section.projects {
+   .projects_main_container {
+     padding: 0;
+     margin-left: 0;
+     justify-items: start;
+     .project_container {
+       margin-left: 0;
+       height: 100%;
+       width: 23em;
+     }
+   }
+ }
+}

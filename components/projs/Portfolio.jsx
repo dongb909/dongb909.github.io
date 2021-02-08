@@ -2,9 +2,9 @@ import React from 'react';
 
 function Portfolio () {
   return (
-    <div className='project_container'>
+    <div id="proj1" className='project_container'>
       <div className="project_content">
-        <div className="project_media">
+        <div className="project_media front">
           <a href="https://srpics.s3-us-west-1.amazonaws.com/portfoliohompage.png"
             target="_blank" 
             rel="noopener noreferrer">
@@ -12,7 +12,7 @@ function Portfolio () {
             </img>
           </a>
         </div>
-        <div className="project_description">
+        <div className="project_description back">
           <a href="https://github.com/dongb909/dongb909.github.io"><h1>PORTFOLIO</h1></a>
           <p>Congratulations! You already know about this frontend application! 
             There are many templates that I could have used but I wanted to take 

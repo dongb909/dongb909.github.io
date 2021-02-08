@@ -2,9 +2,9 @@ import React from 'react';
 
 function DataFi () {
   return (
-    <div className='project_container'>
+    <div id="proj2" className='project_container'>
       <div className="project_content">
-        <div className="project_media">
+        <div className="project_media front">
           <a href="https://srpics.s3-us-west-1.amazonaws.com/FINISHED+SDC+LOADER+IO+.jpg"
             target="_blank" 
             rel="noopener noreferrer">
@@ -13,7 +13,7 @@ function DataFi () {
               </img>
           </a>
         </div>
-        <div className="project_description">
+        <div className="project_description back">
           <a href="http://github.com/Data-fi/Gallery"><h1>DATAFI</h1></a>
           <p>Redesigned the backend for a gallery microservice to be able to take 
             on production level load by identifying bottlenecks for optimization

@@ -1,26 +1,53 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Contact () {
+  const[status, setStatus] = useState("")
+
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    // xhr.onreadystatechange = ()=>{
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        // this.setState({ status: "SUCCESS" });
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  }
+
   return (
     <div className='section contact'>
       <a id="contactlinked"></a>
       <div className="contacts_container">
+          
         <div className="contacts_content contacts_bg">
-          <div className="contacts_heading">
-            <img src="https://srpics.s3-us-west-1.amazonaws.com/00.jpg" alt="Profile picture" ></img>
-            <h1>Need to build a website?</h1>
-            <br/>
-            <p><strong>Connect with me and let's solve your problem!</strong></p>
-            <br/>
-            <br/>
-            <p>And! Thank you for visiting :)</p>
-          <img></img>
-          </div>
+        <form
+        // onSubmit={submitForm}
+        onSubmit={()=>submitForm}
+        action="https://formspree.io/f/xrgoddll"
+        method="POST"
+      >
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <label>Message:</label>
+        <input type="text" name="message" />
+        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+      </form>
         </div>
         <div className="contacts_content contacts_icons">
           <div className="icon">
           <a href="https://www.github.com/dongb909">
-            <svg fill="#000000" 
+            <svg fill="#fff" 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 30 24" width="65" height="65">
                 <path d="M 5.6875 5 C 5.6875 5 5 6.207031 5 8.25 C 5 9.605469 5.308594 10.320313 5.53125 10.6875 C 3.96875 
@@ -44,7 +71,7 @@ function Contact () {
           </div>
           <div className="icon">
             <a href="https://www.linkedin.com/in/dongb909">
-              <svg fill="#000000" 
+              <svg fill="#fff" 
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 46 46" width="70" height="50">
                   <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z 
@@ -55,14 +82,14 @@ function Contact () {
             </a>
             <a href="#https://www.linkedin.com/in/dongb909">LinkedIn</a>
           </div>
-          <div className="icon">
-            <svg height="50" viewBox="0 0 27 24" width="50" 
+          {/* <div className="icon">
+            <svg fill="#fff" height="50" viewBox="0 0 27 24" width="50" 
             xmlns="http://www.w3.org/2000/svg">
               <path d="m8.75 17.612v4.638c0 .324.208.611.516.713.077.025.156.037.234.037.234 0 .46-.11.604-.306l2.713-3.692z"/><path d="m23.685.139c-.23-.163-.532-.185-.782-.054l-22.5 11.75c-.266.139-.423.423-.401.722.023.3.222.556.505.653l6.255 2.138 13.321-11.39-10.308 12.419 10.483 3.583c.078.026.16.04.242.04.136 0 .271-.037.39-.109.19-.116.319-.311.352-.53l2.75-18.5c.041-.28-.077-.558-.307-.722z"/></svg>
             <a>dongb909@gmail.com</a>
-          </div>
+          </div> */}
           <div className="icon">
-            <svg version="1.1" 
+            <svg fill="#fff" version="1.1" 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 600 400" width="50" height="60" >
               <path d="M502.05,407.127l-56.761-37.844L394.83,335.65c-9.738-6.479-22.825-4.355-30.014,4.873l-31.223,40.139
@@ -85,11 +112,11 @@ function Contact () {
           </div>
           <div className="icon">
             <a href="https://drive.google.com/file/d/1xiGPePggV_merqVtRetGtiEcifPpKEp4/view?usp=sharing">
-              <svg height="50" viewBox="0 0 500 500" width="70" 
+              <svg fill="#fff" height="50" viewBox="0 0 500 500" width="70" 
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="m511.917 189.274h-128.834v-189.274h-271.547l-111.453 111.457v400.543h383v-76.324h128.833v-246.402zm-399.167-148.06v71.456h-71.454zm240.333 440.786h-323v-339.331h112.667v-112.669h210.333v159.274h-283v246.402h283zm128.834-76.324h-381.834v-186.402h381.833v186.402z"/><path d="m162.292 335.761h17.733c24.25 0 43.979-19.729 43.979-43.979s-19.729-43.979-43.979-43.979h-47.733v130.917h30zm0-57.959h17.733c7.708 0 13.979 6.271 13.979 13.979s-6.271 13.979-13.979 13.979h-17.733z"/><path d="m395.763 335.761h41.32v-30h-41.32v-27.959h51.987v-30h-81.987v130.918h30z"/><path d="m339.204 334.233v-42.368c0-24.296-19.767-44.063-44.063-44.063h-47.649v130.494h47.649c24.296 0 44.063-19.766 44.063-44.063zm-61.713-56.431h17.649c7.754 0 14.063 6.309 14.063 14.063v42.368c0 7.754-6.309 14.063-14.063 14.063h-17.649z"/><path d="m178.148 112.669h137.436v30h-137.436z"/></svg>          
             </a>
-            <a href="https://drive.google.com/file/d/1R6q2jtucJ5x-1dXZEfd7bwEIMW0FNdk8/view?usp=sharing">Resume</a>
+            <a href="https://drive.google.com/file/d/1lcdM0lZSxN5VulmX6h1hLYpoPOfX0etb/view?usp=sharing">Resume</a>
           </div>
         </div>
       </div>

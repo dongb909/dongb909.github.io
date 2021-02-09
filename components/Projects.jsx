@@ -13,11 +13,11 @@ function Projects () {
       <h1>PROJECTS</h1>
       <div className="projects_main_container">
         <Portfolio/>
-        <Air6n6/>
         <DataFi/>
+        <Air6n6/>
+        <WonderLust/>
         <ColorGame/>
         <Goals/>
-        <WonderLust/>
       </div>
     </section>
   )

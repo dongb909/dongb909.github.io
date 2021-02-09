@@ -9,18 +9,14 @@ function Portfolio () {
             </img>
         </div>
         <div className="project_description back">
-          {/* <a href="https://github.com/dongb909/dongb909.github.io"></a> */}
           <h1 className="card_title">PORTFOLIO</h1>
           <p className="card_descr">Congratulations! You already know about this frontend application! 
             There are many templates that I could have used but I wanted to take 
-            the opportunity to practice with desktop vs mobile compatibility and CSS through the use of SASS.
+            the opportunity to showcase my pure JS and CSS transition capabilities.
           </p>
-          <p className="stack">TECH STACK: React | Hooks | SASS | JS | CSS</p>
+          <p className="stack"><span>TECH STACK: </span> React | Hooks | SASS | JS | CSS</p>
           <div className="projLink">
-            <a>Github</a>
-          </div>
-          <div className="projLive">
-          <a>LIVE</a>
+            <a href="https://github.com/dongb909/dongb909.github.io">Github</a> | <a href="/">LIVE</a>
           </div>
         </div>
       </div>  

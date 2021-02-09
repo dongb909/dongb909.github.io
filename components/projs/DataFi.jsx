@@ -14,12 +14,13 @@ function DataFi () {
           </a>
         </div>
         <div className="project_description back">
-        <h1 className="card_title">Daily Goals</h1>
-          <p className="card_descr"> FILL IN
+        <h1 className="card_title">DataFi</h1>
+          <p className="card_descr"> A full-stack gallery microservice that's highly scalable and performance optimized for a database containing 70M seed records. Tested for system bottlenecks.
           </p>
-          <p className="stack">Tech stack: React Native | Android Studio |CSS | JS</p>
-          <div className="projLink"></div>
-          <div className="projLive"></div>
+          <p className="stack"><span>TECH STACK: </span> AWS | NGINX | CloudWatch | New Relic | MongoDB | React | JS</p>
+          <div className="projLink">
+          <a href="https://github.com/Data-fi/Gallery"
+            target="_blank">Github</a></div>
         </div>
       </div>  
     </div>

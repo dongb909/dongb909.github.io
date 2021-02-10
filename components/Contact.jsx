@@ -30,6 +30,12 @@ function Contact () {
       <div className="contacts_container">
           
         <div className="contacts_content contacts_bg">
+          <div>
+            <h1>Have more questions? Want to collaborate?</h1>
+            <h2>Contact me and let's connect!</h2>
+          </div>
+          
+          <div className="emailForm">
             <form
             // onSubmit={submitForm}
             onSubmit={()=>submitForm}
@@ -43,6 +49,7 @@ function Contact () {
             {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
             {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </form>
+          </div>
         </div>
         <div className="contacts_content contacts_icons">
           <div className="icon">

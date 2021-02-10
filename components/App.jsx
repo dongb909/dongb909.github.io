@@ -14,8 +14,8 @@ import Skills from './Skills';
         {/* <Navbar /> */}
         <div className="mainContainer">
           {/* <Home/> */}
-          {/* <About/>  */}
           <Contact/>
+          <About/> 
           {/* <Skills/>  */}
            {/* <Projects/>  */}
           <a id="aboutbuttonlinked"></a>

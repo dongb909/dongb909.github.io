@@ -1,8 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const Navbar = () => {
- 
+  useEffect(function(){
+    const bar = document.querySelector(".navbar")
+    const home = document.querySelector(".home");
+    // console.log(home, bar)
+    const navOptions = {
+      // threshold:0,
+      rootMargin: "-100px 0px 0px 0px"
+    }
+    const navColorOnScroll = new IntersectionObserver(function(entries, navColorOnScroll){
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting) bar.classList.add("navBgColor")
+        else bar.classList.remove("navBgColor")
+      })
+    }, navOptions);
+  
+      navColorOnScroll.observe(home);
+  })
   return (  
+    <header>
     <nav className="navbar" >
       <div className="burger">
         <div className="line"></div>
@@ -16,6 +33,7 @@ const Navbar = () => {
         <li className="anchor4"><a href="#contactlinked">CONTACT</a></li>
       </ul>
     </nav>  
+    </header>
   );
 }
  

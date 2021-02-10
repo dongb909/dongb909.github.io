@@ -10,17 +10,17 @@ import Skills from './Skills';
 
  function App () {
     return ( 
-      <div>
-        <Navbar />
+      <>
+        {/* <Navbar /> */}
         <div className="mainContainer">
+          {/* <Home/> */}
+          {/* <About/>  */}
           <Contact/>
-          <About/>
-          <Home/>
-          <Skills/>
-          {/* <Projects/>  */}
+          {/* <Skills/>  */}
+           {/* <Projects/>  */}
           <a id="aboutbuttonlinked"></a>
         </div>
-      </div>
+      </>
      );
 }
  

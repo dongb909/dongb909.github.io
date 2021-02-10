@@ -3,7 +3,6 @@ import React, {useEffect} from 'react';
 function About () {
   useEffect(function(){
     const sliders = document.querySelectorAll(".slide_in");
-    console.log(sliders)
     const appearOptions = {
     threshold:0,
     rootMargin: "0px 0px -150px 0px"
@@ -12,7 +11,6 @@ function About () {
     entries.forEach(entry=>{
       if(!entry.isIntersecting){return}
       else{
-        console.log(entry.target)
         entry.target.classList.add("appear")
         appearOnScroll.unobserve(entry.target)
       }
@@ -20,7 +18,6 @@ function About () {
   }, appearOptions)
 
   sliders.forEach(slider =>{
-    console.log(slider)
     appearOnScroll.observe(slider)
   })
   })

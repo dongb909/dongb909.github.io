@@ -17,9 +17,10 @@ body {
 .navbar {
   // background: rgb(221, 217, 217);
   position: fixed;
+  right:0;
   z-index: 3;
   width: 100%;
-  height: 6vh;
+  height: 4vh;
 
   .navlinks {
     align-items: center;
@@ -40,11 +41,18 @@ body {
       font-weight: 700;
 
       &:hover {
-        background-color: rgba(101, 188, 194, 0.8);
+        background-color: rgba(101, 188, 194, 0.5);
         color: black;
       }
     }
   }
+}
+
+.navBgColor {
+  background: rgba(103, 179, 209, 0.7);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: background .5s ease-in;
+  color:black;
 }
 
 @media screen and (max-width: 700px) {
@@ -367,7 +375,7 @@ body {
       padding-left: 35%;
       padding-bottom: 1rem;
       font-size: 3rem;
-      ::after,
+      // ::after,
       ::before {
         content: "";
         height: 2px;
@@ -376,9 +384,9 @@ body {
         background-color: lightgrey;
         left: 50%;
       }
-      ::after {
-        top: 135px;
-      }
+      // ::after {
+      //   top: 100px;
+      // }
 
       span {
         color: rgba(85, 183, 190, 0.8);
@@ -387,14 +395,23 @@ body {
     }
 
     // border: 6px green solid;
-    .from_left{
+    .from_left {
       transform: translateX(-80%);
+      opacity: 0;
     }
-    .from_right{
+    .from_right {
       transform: translateX(50%);
+      opacity: 0;
     }
-    .from_left, .from_right{transition:transform 400ms ease-in;}
-    .from_left.appear, .from_right.appear{transform:translateX(0)}
+    .from_left,
+    .from_right {
+      transition: opacity 250ms ease-in, transform 400ms ease-in;
+    }
+    .from_left.appear,
+    .from_right.appear {
+      transform: translateX(0);
+      opacity: 1;
+    }
     p {
       margin: 3% 0;
       font-size: 1.4rem;
@@ -589,17 +606,17 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
-  position:relative;
+  position: relative;
   width: 100%;
   height: 100vh;
   padding: 4rem 0;
   overflow-y: visible;
 
-  // 
+  //
   // height: auto;
   // position: relative;
   // overflow-y: visible;
-  // font-family: Georgia, 
+  // font-family: Georgia,
 
   h1 {
     margin-bottom: 1rem;
@@ -642,8 +659,7 @@ body {
         }
         .back {
           transform: rotateY(0.5turn);
-          background-color: rgba(94, 165, 189,.2);
-          // filter:blur(1px);
+          background-color: rgba(94, 165, 189, 0.1);
           padding: 3%;
         }
       }
@@ -669,8 +685,8 @@ body {
     p {
       padding: 1%;
       text-align: left;
-      color:black;
-      font-weight:400;
+      color: black;
+      font-weight: 400;
     }
 
     .project_media {
@@ -699,7 +715,7 @@ body {
 }
 @media only screen and (max-width: 1300px) {
   .projects {
-    height:auto;
+    height: auto;
     h1 {
       padding-top: 1.8em;
       font-size: x-large;
@@ -717,9 +733,9 @@ body {
 
 @media screen and (max-width: 700px) {
   .projects {
-    padding-top:0;
-    position:relative;
-    height:auto;
+    padding-top: 0;
+    position: relative;
+    height: auto;
     h1 {
       padding-top: 1.8rem;
       font-size: x-large;
@@ -757,39 +773,39 @@ body {
           // border-radius: ;
           // border:green solid;
           transition: none;
-          .front{
+          .front {
             position: relative;
             height: 60%;
             width: 70%;
             backface-visibility: hidden;
             box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
             // border-radius: 0;
-            left:50%;
+            left: 50%;
             transform: translateX(-50%);
             z-index: 2;
           }
-          .back{
-            position:absolute;
+          .back {
+            position: absolute;
             height: auto;
             width: 90%;
-            top:100px;
-            left:23px;
-            backface-visibility:visible;
+            top: 100px;
+            left: 23px;
+            backface-visibility: visible;
             transform: none;
             background-color: rgba(245, 246, 247, 0.4);
-            
-            h1{
+
+            h1 {
               font-size: 1.1rem;
-              margin-top:7rem;
-              margin-bottom:0;
-              padding-bottom:0;
+              margin-top: 7rem;
+              margin-bottom: 0;
+              padding-bottom: 0;
             }
-            p{
-              padding-top:0;
-              margin-top:2%;
+            p {
+              padding-top: 0;
+              margin-top: 2%;
               font-size: 1.1rem;
-              span{
-                font-weight:600;
+              span {
+                font-weight: 600;
               }
             }
           }
@@ -805,62 +821,62 @@ body {
     background-color: white;
     margin: 0;
     padding-top: 0;
-    height:auto;
+    height: auto;
     position: relative;
-    h1{
-      margin-top:0;
-      padding-top:5%;
+    h1 {
+      margin-top: 0;
+      padding-top: 5%;
     }
     .projects_main_container {
       width: 100%;
-      height:auto;
+      height: auto;
       justify-items: start;
       grid-row-gap: 0;
-      grid-column-gap:0;
+      grid-column-gap: 0;
       .project_container {
         height: auto;
         width: 100%;
         border-radius: 0 !important;
         // border-bottom: 2px solid lightgrey;
         .project_content {
-          height:auto;
-          width:100%;        
+          height: auto;
+          width: 100%;
           border-radius: 0 !important;
-          .front{
-            height:200px;
-            position:relative;
-            width:100%;
-            margin:0;
-            padding:0;
-            box-shadow:none;
+          .front {
+            height: 200px;
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
             img {
               width: 100%;
               height: 100%;
               border-radius: 0 !important;
             }
           }
-          .back{
-            position:relative;
+          .back {
+            position: relative;
             // height:auto;
-            width:100%;
-            left:0;
-            top:0;
-            padding:0;
-            margin:0;
+            width: 100%;
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
             background-color: rgba(245, 246, 247, 0.4) !important;
-            box-shadow:none;
-            .projLink{
+            box-shadow: none;
+            .projLink {
               padding-bottom: 10px;
             }
           }
-          .front,.back{
+          .front,
+          .back {
             border-radius: 0 !important;
           }
-          h1.card_title{
-            margin:0;
-            padding:0;
+          h1.card_title {
+            margin: 0;
+            padding: 0;
           }
-          
         }
       }
     }
@@ -872,12 +888,12 @@ body {
 ********************************************/
 
 .contact {
-  background-color: rgba(0, 0, 0, 0.935);;
+  background: rgba(216, 225, 238, 0.935);
   // background-size: cover;
   // background-position: center;
   height: 100vh;
   overflow-y: visible;
-  color:white;
+  color: white;
 
   .contacts_container {
     position: relative;
@@ -887,7 +903,7 @@ body {
     height: 100%;
 
     .contacts_content {
-      margin-top: 5em;
+      // margin-top: 5em;
       width: 100%;
       height: 80%;
     }
@@ -918,7 +934,6 @@ body {
         a {
           text-decoration: none;
           margin: 0;
-          color: black;
         }
       }
     }

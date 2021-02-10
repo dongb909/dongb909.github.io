@@ -30,24 +30,24 @@ function Contact () {
       <div className="contacts_container">
           
         <div className="contacts_content contacts_bg">
-        <form
-        // onSubmit={submitForm}
-        onSubmit={()=>submitForm}
-        action="https://formspree.io/f/xrgoddll"
-        method="POST"
-      >
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
+            <form
+            // onSubmit={submitForm}
+            onSubmit={()=>submitForm}
+            action="https://formspree.io/f/xrgoddll"
+            method="POST"
+          >
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Message:</label>
+            <input type="text" name="message" />
+            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+            {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          </form>
         </div>
         <div className="contacts_content contacts_icons">
           <div className="icon">
           <a href="https://www.github.com/dongb909">
-            <svg fill="#fff" 
+            <svg fill="#5295b4" 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 30 24" width="65" height="65">
                 <path d="M 5.6875 5 C 5.6875 5 5 6.207031 5 8.25 C 5 9.605469 5.308594 10.320313 5.53125 10.6875 C 3.96875 

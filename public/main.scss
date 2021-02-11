@@ -461,7 +461,7 @@ body {
 		}
 		p {
 			margin: 3% 0;
-			font-size: 1.4rem;
+			font-size: 1.3rem;
 		}
 		p:first-letter {
 			color: rgba(85, 183, 190, 0.8);
@@ -507,7 +507,7 @@ body {
 				}
 			}
 			p {
-				font-size: 1.4rem;
+				font-size: 1rem;
 			}
 		}
 		#myPhoto {
@@ -532,7 +532,7 @@ body {
 @media screen and (max-width: 900px) {
 	#about {
 		p {
-			font-size: 1rem;
+			font-size: 0.8rem;
 		}
 		#myPhoto {
 			width: 100%;
@@ -785,6 +785,8 @@ body {
 @media only screen and (max-width: 1300px) {
 	.projects {
 		height: auto;
+		p {
+		}
 		h1 {
 			padding-top: 1.8em;
 			font-size: x-large;
@@ -845,7 +847,7 @@ body {
 						p {
 							padding-top: 0;
 							margin-top: 2%;
-							font-size: 1.1rem;
+							font-size: 1rem;
 							span {
 								font-weight: 600;
 							}
@@ -921,6 +923,9 @@ body {
 						box-shadow: none;
 						.projLink {
 							padding-bottom: 10px;
+						}
+						p {
+							font-size: 0.7rem;
 						}
 					}
 					.front,

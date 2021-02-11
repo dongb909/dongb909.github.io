@@ -49,10 +49,11 @@ body {
 }
 
 .navBgColor {
-  background: rgba(103, 179, 209, 0.7);
+  background: rgba(103, 179, 209, 0.9);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: background 0.5s ease-in;
   color: black;
+  height: 40px;
 }
 
 @media screen and (max-width: 700px) {
@@ -536,11 +537,11 @@ body {
       }
     }
   }
-  @media screen and (max-width: 200px) {
-    #about {
-      height: 150vh;
-      overflow-y: visible;
-    }
+}
+@media screen and (max-width: 380px) {
+  #about {
+    height: 83vh;
+    overflow-y: visible;
   }
 }
 
@@ -602,7 +603,6 @@ body {
     }
   }
 }
-
 
 /********************************************
 ******************** PROJECTS *****************
@@ -763,7 +763,7 @@ body {
       width: 100%;
       // grid-row-gap: 10px;
       justify-items: center;
-      grid-row-gap: .5rem;
+      grid-row-gap: 0.5rem;
 
       h1 {
         font-size: 2rem;
@@ -771,10 +771,10 @@ body {
       p {
         font-size: 1.5rem;
       }
-      .project_container{
-      //   width:500px;
-      //   height:400px;
-      //   border:2px solid red
+      .project_container {
+        //   width:500px;
+        //   height:400px;
+        //   border:2px solid red
       }
       .project_container:hover .project_content {
         // transform: none;
@@ -857,7 +857,7 @@ body {
           width: 100%;
           border-radius: 0 !important;
           transform: none;
-          position:relative;
+          position: relative;
           .front {
             height: 200px;
             position: relative;
@@ -871,7 +871,6 @@ body {
               width: 100%;
               height: 100%;
               border-radius: 0 !important;
-
             }
           }
           .project_container:hover .project_content {
@@ -886,7 +885,7 @@ body {
             top: 12px;
             padding: 0;
             margin: 0;
-            background-color:white;
+            background-color: white;
             box-shadow: none;
             .projLink {
               padding-bottom: 10px;
@@ -914,6 +913,7 @@ body {
   position: relative;
   background: rgba(211, 240, 241, 0.935);
   height: 100vh;
+  width: 100vw;
   overflow-y: hidden;
   color: black;
   font-family: "Playfair Display", serif;
@@ -922,7 +922,8 @@ body {
   .contacts_container {
     // border: 2px solid red;
     width: 100%;
-    height: 100%;
+    height: auto;
+    overflow-y: hidden;
 
     .contacts_content {
       //icons
@@ -1038,10 +1039,10 @@ body {
   @media screen and (max-width: 400px) {
     .contacts_container .contacts_bg {
       h1 {
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
       h2 {
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
     }
   }

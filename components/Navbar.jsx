@@ -11,7 +11,7 @@ const Navbar = () => {
     }
     const navColorOnScroll = new IntersectionObserver(function(entries, navColorOnScroll){
       entries.forEach(entry=>{
-        if(!entry.isIntersecting) bar.classList.add("navBgColor")
+        if(!entry.isIntersecting && window.innerWidth >700) bar.classList.add("navBgColor")
         else bar.classList.remove("navBgColor")
       })
     }, navOptions);

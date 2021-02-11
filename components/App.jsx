@@ -11,13 +11,13 @@ import Skills from './Skills';
  function App () {
     return ( 
       <>
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="mainContainer">
+          <About/> 
+          {/* <Skills/>  */}
+          <Projects/> 
           <Contact/>
-        <About/> 
           <Home/>
-          <Skills/> 
-        <Projects/> 
           <a id="aboutbuttonlinked"></a>
         </div>
       </>

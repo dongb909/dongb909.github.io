@@ -98,6 +98,7 @@ body {
   .burger {
     position: absolute;
     display: block;
+    z-index:100;
     right: 5%;
     top: 50%;
     // border: red solid;
@@ -938,7 +939,7 @@ body {
 
       .emailForm {
         position: absolute;
-        z-index: 3;
+        z-index: 2;
         // border: 3px solid blue;
         background: white;
         height: 70vh;

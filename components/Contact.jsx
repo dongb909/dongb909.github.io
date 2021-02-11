@@ -23,15 +23,17 @@ function Contact () {
     };
     xhr.send(data);
   }
-
+  
   return (
     <div className='section contact'>
       <a id="contactlinked"></a>
       <div className="contacts_container">
           
         <div className="contacts_content contacts_bg">
-          <div>
-            <h1>Have more questions? Want to collaborate?</h1>
+        <div className="rectangle">
+        </div>
+        <div className="emailMe">
+            <h1>Thanks <span>for</span> visiting<span>!</span>! </h1>
             <h2>Contact me and let's connect!</h2>
           </div>
           
@@ -42,14 +44,23 @@ function Contact () {
             action="https://formspree.io/f/xrgoddll"
             method="POST"
           >
-            <label for="name">Name:<input type="text" placeholder="You're name here..."/></label>
-            
-            <label for="text">Email:</label>
-            <input type="email" id="email"name="email" />
+            {/* <div className="formInner"> */}
+
+            <div className="theirName input-group">
+              <label for="name">Name:<input type="text" placeholder="You're name here..."/></label>
+            </div>
+            <div className="theirEmail input-group">
+
+              <label for="text">Email:</label>
+              <input type="email" id="email" name="email input-group" placeholder="dongb909@gmail.com" />
+            </div>  
+            <div className="theirMsg input-group">
             <label for="msg">Message:</label>
-            <textarea type="text" id="msg"name="message" />
+            <textarea name="msg" id="msg" cols="40" rows="10" placeholder="Your message"></textarea>
+            </div>
             {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
             {status === "ERROR" && <p>Ooops! There was an error.</p>}
+            {/* </div> */}
           </form>
           </div>
         </div>

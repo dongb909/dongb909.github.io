@@ -324,7 +324,7 @@ body {
 			margin-bottom: 1rem;
 		}
 		#description {
-			font-size: 2.3rem;
+			font-size: 2rem;
 			color: white;
 		}
 	}
@@ -402,22 +402,25 @@ body {
 	background-color: white;
 	width: 100%;
 	height: auto;
-	position: relative;
+	// position: flex;
+	position:relative;
 	overflow-y: visible;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	// display:flex;
 
 	#aboutDescr {
 		position: relative;
 		height: 100%;
 		width: 50%;
+		left:0;
 		padding-left: 7%;
-		padding-top: 4rem;
+		padding-top: 1rem;
 		padding-bottom: 5rem;
 		h1 {
 			font-family: "Playfair Display", serif;
 			padding-left: 35%;
 			padding-bottom: 1rem;
-			font-size: 3rem;
+			font-size: 4rem;
 			::before {
 				content: "";
 				height: 2px;
@@ -426,7 +429,7 @@ body {
 				background-color: lightgrey;
 				left: 50%;
 			}
-
+			
 			span {
 				color: rgba(85, 183, 190, 0.8);
 				font-weight: bold;
@@ -461,7 +464,7 @@ body {
 		}
 		p {
 			margin: 3% 0;
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 		p:first-letter {
 			color: rgba(85, 183, 190, 0.8);
@@ -477,25 +480,33 @@ body {
 		}
 	}
 	#myPhoto {
+		position:absolute;
+		width: 650px;
+		right:2%;
+		top:50%;
+		transform: translateY(-50%);
+		// border: 3px solid red;
+		height:650px;
 		img {
-			height: 100%;
-			width: 43%;
-			position: absolute;
-			right: 0;
-			top: 0;
+			height: 650px;
+			width: 650px;
 		}
 
 		// }
 	}
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 	#about {
-		margin-top: 4rem;
+		// margin-top: 20rem;
+		position:relative;
+		overflow-y: visible;
 		#aboutDescr {
-			padding-top: 30px;
+			margin-top: 40rem;
+			padding-top: 10px;
 			padding-right: 5%;
 			width: 100%;
 			h1 {
+				font-size: 3.5rem;
 				::before,
 				::after {
 					height: 1px;
@@ -507,54 +518,58 @@ body {
 				}
 			}
 			p {
-				font-size: 1rem;
+				font-size: 1.3rem;
 			}
 		}
 		#myPhoto {
-			width: 100%;
+			position: absolute;
+			width: 500px;
 			height: 500px;
-			margin-top: 2rem;
+			top:-560px;
+			left: 50%;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
 			img {
-				position: relative;
-				left: 50%;
-				height: 500px;
-				width: 500px;
-				transform: translateX(-50%);
-				-webkit-transform: translateX(-50%);
-				-moz-transform: translateX(-50%);
-				-o-transform: translateX(-50%);
+				height: 100%;
+				width: 100%;
 				box-shadow: -8px 8px 20px 7px rgba(0, 0, 0, 0.4);
-				// height: 10px;
 			}
 		}
 	}
 }
-@media screen and (max-width: 900px) {
+// @media screen and (max-width: 900px) {
+// 	#about {
+// 		p {
+// 			// font-size: 0.7rem !important;
+// 		}
+// 		#myPhoto {
+// 			width: 100%;
+// 			height: 400px;
+// 			margin-top: 3rem;
+// 			img {
+// 				height: 400px;
+// 				width: 400px;
+// 			}
+// 		}
+// 	}
+// }
+@media screen and (max-width: 450px) {
 	#about {
-		p {
-			font-size: 0.8rem;
-		}
-		#myPhoto {
-			width: 100%;
-			height: 400px;
-			margin-top: 3rem;
-			img {
-				height: 400px;
-				width: 400px;
-			}
-		}
-	}
-}
-@media screen and (max-width: 405px) {
-	#about {
+		overflow-y: visible;
+		height:auto;
 		#aboutDescr {
-			padding-top: 120px;
+			// padding-top: 2rem;
+			top:0;
+			padding-top:260px;
+			margin-top:0;
 			padding-right: 5%;
-			height: 1px;
+			// height: 1px;
 			width: 100%;
 			h1 {
 				padding-left: 35%;
-				font-size: 2rem;
+				font-size: 1.5rem;
 				::before,
 				::after {
 					width: 4rem;
@@ -564,35 +579,29 @@ body {
 				}
 			}
 			p {
-				margin-top: 15px;
-				font-size: 0.7rem;
+				font-size: .7rem;
 			}
 
 			p:first-of-type:first-letter {
-				font-size: 50px;
+				font-size: 2rem;
 				padding-right: 4px;
-				float: left;
 				line-height: 0.6;
 				padding-bottom: 0;
 			}
 		}
 		#myPhoto {
-			width: 100%;
+			width: 200px;
 			height: 200px;
-			margin-top: 0;
+			position:absolute;
+			top:50px;
+			right:80px;
 
 			img {
-				height: 300px;
+				height: 100%;
 				width: 100%;
 				box-shadow: -4px 3px 10px 3px rgba(0, 0, 0, 0.4);
 			}
 		}
-	}
-}
-@media screen and (max-width: 380px) {
-	#about {
-		height: 83vh;
-		overflow-y: visible;
 	}
 }
 
@@ -618,6 +627,7 @@ body {
 		left: 0;
 		height: 100%;
 		width: 100%;
+		color:black;
 	}
 	h1 {
 		padding: 3rem 0 1rem 5%;

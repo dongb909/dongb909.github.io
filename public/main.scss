@@ -403,7 +403,7 @@ body {
 	width: 100%;
 	height: auto;
 	// position: flex;
-	position:relative;
+	position: relative;
 	overflow-y: visible;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	// display:flex;
@@ -412,7 +412,7 @@ body {
 		position: relative;
 		height: 100%;
 		width: 50%;
-		left:0;
+		left: 0;
 		padding-left: 7%;
 		padding-top: 1rem;
 		padding-bottom: 5rem;
@@ -429,7 +429,7 @@ body {
 				background-color: lightgrey;
 				left: 50%;
 			}
-			
+
 			span {
 				color: rgba(85, 183, 190, 0.8);
 				font-weight: bold;
@@ -480,13 +480,13 @@ body {
 		}
 	}
 	#myPhoto {
-		position:absolute;
+		position: absolute;
 		width: 650px;
-		right:2%;
-		top:50%;
+		right: 2%;
+		top: 50%;
 		transform: translateY(-50%);
 		// border: 3px solid red;
-		height:650px;
+		height: 650px;
 		img {
 			height: 650px;
 			width: 650px;
@@ -498,7 +498,7 @@ body {
 @media only screen and (max-width: 1400px) {
 	#about {
 		// margin-top: 20rem;
-		position:relative;
+		position: relative;
 		overflow-y: visible;
 		#aboutDescr {
 			margin-top: 40rem;
@@ -518,14 +518,14 @@ body {
 				}
 			}
 			p {
-				font-size: 1.3rem;
+				font-size: 1.2rem;
 			}
 		}
 		#myPhoto {
 			position: absolute;
 			width: 500px;
 			height: 500px;
-			top:-560px;
+			top: -560px;
 			left: 50%;
 			transform: translateX(-50%);
 			-webkit-transform: translateX(-50%);
@@ -558,12 +558,12 @@ body {
 @media screen and (max-width: 450px) {
 	#about {
 		overflow-y: visible;
-		height:auto;
+		height: auto;
 		#aboutDescr {
 			// padding-top: 2rem;
-			top:0;
-			padding-top:260px;
-			margin-top:0;
+			top: 0;
+			padding-top: 260px;
+			margin-top: 0;
 			padding-right: 5%;
 			// height: 1px;
 			width: 100%;
@@ -579,7 +579,7 @@ body {
 				}
 			}
 			p {
-				font-size: .7;
+				font-size: 0.7rem;
 			}
 
 			p:first-of-type:first-letter {
@@ -592,9 +592,9 @@ body {
 		#myPhoto {
 			width: 200px;
 			height: 200px;
-			position:absolute;
-			top:50px;
-			right:80px;
+			position: absolute;
+			top: 50px;
+			right: 80px;
 
 			img {
 				height: 100%;
@@ -627,7 +627,7 @@ body {
 		left: 0;
 		height: 100%;
 		width: 100%;
-		color:black;
+		color: black;
 	}
 	h1 {
 		padding: 3rem 0 1rem 5%;

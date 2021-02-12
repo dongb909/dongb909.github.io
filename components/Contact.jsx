@@ -33,7 +33,7 @@ function Contact () {
         <div className="rectangle">
         </div>
         <div className="emailMe">
-            <h1>Thanks <span>for</span> visiting<span>!</span>! </h1>
+            <h1>Thanks <span>for</span> visiting </h1>
             <h2>Contact me and let's connect!</h2>
           </div>
           

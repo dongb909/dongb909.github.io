@@ -18,7 +18,7 @@ function Home () {
         </div>          
       </div>
       <div id="nextBtn">
-        <a href="#aboutbuttonlinked">
+        <a href="#aboutlinked">
           <div id="mouse">
             <span></span>
           </div>

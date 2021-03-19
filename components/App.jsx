@@ -14,11 +14,11 @@ import Skills from './Skills';
         <Navbar />
         <div className="mainContainer">
           <Home/>
+          <a id="aboutbuttonlinked"></a>
           <About/> 
           <Skills/> 
           <Projects/> 
           <Contact/>
-          <a id="aboutbuttonlinked"></a>
         </div>
       </>
      );
